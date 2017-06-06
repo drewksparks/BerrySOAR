@@ -1,0 +1,8 @@
+{
+    "UrbanAirship-iOS-SDK": {
+        "name": "UrbanAirship-iOS-SDK",
+        "type": "podspec",
+        "spec": "~> 8.0.5",
+        "count": 1
+    }
+}

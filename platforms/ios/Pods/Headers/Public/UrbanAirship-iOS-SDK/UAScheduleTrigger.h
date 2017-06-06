@@ -1,0 +1,5 @@
+XSym
+0064
+ef519e665190cfe5e0b09697cf26a427
+../../../UrbanAirship-iOS-SDK/Airship/Common/UAScheduleTrigger.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               

@@ -1,0 +1,1011 @@
+
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html lang="en">
+  <head>
+	 <script src="assets/jquery.min.js"></script><meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    <title>SOAR 2017</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;;lang=en" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/material.css">
+    <link rel="stylesheet" href="assets/styles.css">
+	  <style>
+	  @font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url(assets/material-font.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+          * {
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.5;
+  font-family: 'Roboto';
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+p {
+  font-weight: 300;
+  margin: 0 0 1.4rem 0;
+}
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 400;
+}
+/**
+ * Material Modal CSS
+ */
+.modal {
+  will-change: visibility, opacity;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-transition-delay: $modal-delay;
+          transition-delay: $modal-delay;
+}
+.modal--active {
+  visibility: visible;
+  opacity: 1;
+}
+.modal--align-top {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.modal__bg {
+  background: transparent;
+}
+.modal__dialog {
+  max-width: 600px;
+  padding-top: 60px;
+    padding-right: 1.2rem;
+    padding-bottom: 1.2rem;
+    padding-left: 1.2rem;
+}
+.modal__content {
+  will-change: transform, opacity;
+  position: relative;
+  padding: 2.4rem;
+  background: #fff;
+  background-clip: padding-box;
+  box-shadow: 0 12px 15px 0 rgba(0,0,0,0.25);
+  opacity: 0;
+  -webkit-transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+font-size: 17px; !important
+}
+.modal__content--active {
+  opacity: 1;
+}
+.modal__close {
+  z-index: 1100;
+  cursor: pointer;
+}
+.modal__trigger {
+  position: relative;
+  display: inline-block;
+  padding: 0rem 0rem 1rem 0rem;
+  color: #000;
+  cursor: pointer;
+  background: #fff;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.modal__trigger--active {
+  z-index: 10;
+}
+.modal__trigger:hover {
+  background: #e5d3d6;
+}
+#modal__temp {
+  will-change: transform, opacity;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  -webkit-transform: none;
+          transform: none;
+  opacity: 1;
+  -webkit-transition: opacity 0.1s ease-out, -webkit-transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: opacity 0.1s ease-out, -webkit-transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: opacity 0.1s ease-out, transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: opacity 0.1s ease-out, transform 0.5s cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+body {
+  height: 100vh;
+  background: #D7D8DF;
+}
+img {
+  max-width: 100%;
+}
+.btns header {
+  padding: 18vh 1vw;
+  background-image: url("img/group-title.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.btns header h1 {
+  margin: 0;
+  color: #fff;
+  font-weight: 300;
+}
+.btns .info {
+  background: #D7D8DF;
+  margin-top: 0px;
+  padding: 0vh 0vw 3vh 0vw;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-flow: column wrap;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+.buttons {
+margin-top: -20px;
+}
+.btns p {
+  text-align: center;
+  color: #fff;
+}
+.btns .link {
+  font-size: 20px;
+}
+.btns .modal__trigger {
+  margin-right: 3px;
+}
+@media (max-width: 640px) {
+  .btns .modal__trigger {
+    margin-bottom: 0.8rem;
+  }
+}
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1.2rem;
+  padding: 0.6rem;
+  background: rgba(0,0,0,0.3);
+  border-radius: 50%;
+  -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.close svg {
+  width: 24px;
+  fill: #fff;
+  pointer-events: none;
+  vertical-align: top;
+}
+.close:hover {
+  background: rgba(0,0,0,0.6);
+}
+.logo {
+  position: fixed;
+  bottom: 3vh;
+  right: 3vw;
+  z-index: 2;
+}
+.logo img {
+  width: 45px;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.logo img:hover {
+  -webkit-transform: rotate(180deg) scale(1.1);
+          transform: rotate(180deg) scale(1.1);
+}
+.leader {
+          width: 45%;
+          font-size: 20px;
+          }
+.headleader {
+          width: 70%;
+          font-size: 28px;
+          }
+.leaderimg {
+          padding-bottom: 10px;
+          }
+h5 {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 10%;
+    font-weight: 400;
+    line-height: 32px;
+    -moz-osx-font-smoothing: grayscale;
+    margin-top: 24px;
+    margin-bottom: 16px;
+          }
+h4 {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 90%;
+    font-weight: 400;
+    line-height: 110%;
+    -moz-osx-font-smoothing: grayscale;
+    margin-top: 0px;
+    margin-bottom: 0px;
+          }
+
+	  </style>
+  </head>
+    
+    
+  <body>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
+            mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">SOAR Leaders</span>
+      <div class="mdl-layout-spacer"></div>
+    </div>
+  </header>
+      <div class="drawer mdl-layout__drawer mdl-color--grey-900 mdl-color-text--grey-50">
+        <header class="drawer-header">
+          <div class="avatar-dropdown">
+            <span>SOAR 2017</span>
+            <div class="mdl-layout-spacer"></div>
+          </div>
+        </header>
+  
+<nav id="main-nav" class="navigation mdl-navigation mdl-color--grey-800">
+          <a class="mdl-navigation__link" href="index.html"><i class="mdl-color-text--grey-400 material-icons" role="presentation">home</i>Home</a>
+          <a class="mdl-navigation__link" href="schedule.html"><i class="mdl-color-text--grey-400 material-icons" role="presentation">event_note</i>Schedule</a>
+          <a class="mdl-navigation__link" href="faq.html"><i class="mdl-color-text--grey-400 material-icons" role="presentation">help</i>FAQ</a>
+          <a class="mdl-navigation__link" href="leaders.html"><i class="mdl-color-text--grey-400 material-icons" role="presentation">wc</i>SOAR Leaders</a>
+          <a class="mdl-navigation__link" href="instagram://tag?name=BerrySOAR17"><i class="mdl-color-text--grey-400 material-icons" role="presentation">add_a_photo</i>Share Photos</a>
+          <a class="mdl-navigation__link" href="links.html"><i class="mdl-color-text--grey-400 material-icons" role="presentation">flag</i>Informative Links</a>
+          <a class="mdl-navigation__link" href="survey.html"><i class="mdl-color-text--grey-400 material-icons" role="presentation">poll</i>Survey</a>
+            <a class="mdl-navigation__link" href="map.html"><i class="mdl-color-text--grey-400 material-icons" role="presentation">map</i>Campus Map</a>
+                       <div id="deviceready" class="blink" style="padding-top:20%;">
+                <p class="event listening mdl-color-text--grey-700"></p>
+<!--REMOVE IN RELEASE -->
+            
+                           
+                           <!-- END REMOVE IN RELEASE -->
+                           
+                <p class="event received mdl-color-text--grey-800"></p>
+            </div>
+          
+        </nav>
+
+      </div>
+      <main class="mdl-layout__content mdl-color--grey-100">
+  
+          
+          
+          
+          
+<div class="btns">
+		<header>
+			<!--<h1>SOAR Leaders</h1> -->
+		</header>
+
+		<div class="info">
+			<div class="buttons">
+				<p>
+                    <a href="" data-modal="#modal0-1" class="modal__trigger leader"><img src="img/photo0-2.jpg" class="leaderimg">Lindsey<br />Taylor</a>
+		    <a href="" data-modal="#modal0" class="modal__trigger leader"><img src="img/photo0.jpg" class="leaderimg">Alex<br />Eberhart</a>
+					<a href="" data-modal="#modal1-1" class="modal__trigger leader"><img src="img/photo1-1.jpg" class="leaderimg">Brayden<br />Fulton</a>
+                    <a href="" data-modal="#modal1-2" class="modal__trigger leader"><img src="img/photo1-2.jpg" class="leaderimg">Kim<br />Lince</a>
+  					<a href="" data-modal="#modal2-1" class="modal__trigger leader"><img src="img/photo2-1.jpg" class="leaderimg">Bailey<br />Dingley</a>
+                    <a href="" data-modal="#modal2-2" class="modal__trigger leader"><img src="img/photo2-2.jpg" class="leaderimg">Davis<br />Murphy</a>
+					<a href="" data-modal="#modal3-1" class="modal__trigger leader"><img src="img/photo3-1.jpg" class="leaderimg">Momo<br />Abdellatif</a>
+                    <a href="" data-modal="#modal3-2" class="modal__trigger leader"><img src="img/photo3-2.jpg" class="leaderimg">Ally<br />Smith</a>
+  					<a href="" data-modal="#modal4-1" class="modal__trigger leader"><img src="img/photo4-1.jpg" class="leaderimg">Brook<br />Davis-Brown</a>
+                    <a href="" data-modal="#modal4-2" class="modal__trigger leader"><img src="img/photo4-2.jpg" class="leaderimg">Ryan<br />Moran</a>
+                    <a href="" data-modal="#modal5-1" class="modal__trigger leader"><img src="img/photo5-1.jpg" class="leaderimg">Chris<br />Arnold</a>
+                    <a href="" data-modal="#modal5-2" class="modal__trigger leader"><img src="img/photo5-2.jpg" class="leaderimg">Analy<br />Huerta</a>
+  					<a href="" data-modal="#modal6-1" class="modal__trigger leader"><img src="img/photo6-1.jpg" class="leaderimg">Elliette<br />McElroy</a>
+                    <a href="" data-modal="#modal6-2" class="modal__trigger leader"><img src="img/photo6-2.jpg" class="leaderimg">Brandon<br />Palmer </a>
+					<a href="" data-modal="#modal7-1" class="modal__trigger leader"><img src="img/photo7-1.jpg" class="leaderimg">Franklin<br />Staples</a>
+                    <a href="" data-modal="#modal7-2" class="modal__trigger leader"><img src="img/photo7-2.jpg" class="leaderimg">Kelley<br />DeLacey </a>
+  					<a href="" data-modal="#modal8-1" class="modal__trigger leader"><img src="img/photo8-1.jpg" class="leaderimg">Danielle<br />Bowling</a>
+                    <a href="" data-modal="#modal8-2" class="modal__trigger leader"><img src="img/photo8-2.jpg" class="leaderimg">Luke<br />Stubbs</a>  				
+                    <a href="" data-modal="#modal9-1" class="modal__trigger leader"><img src="img/photo9-1.jpg" class="leaderimg">Antonio<br />Brown</a>
+                    <a href="" data-modal="#modal9-2" class="modal__trigger leader"><img src="img/photo9-2.jpg" class="leaderimg">Megan<br />Radosta</a>
+
+                  
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal -->
+<div id="modal0-1" class="modal modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<h3 style="margin: 0 0 0 0;">Lindsey Taylor</h3>
+				<h3><em>Assistant VP for Student Affairs</em></h3>
+
+<h4><strong>Hometown:</strong> Fayetteville, GA<br/>
+<strong>Email:</strong> <a href="mailto:ltaylor@berry.edu">ltaylor@berry.edu</a></h4>
+				
+				<!-- modal close button -->
+				<a href="" class="modal__close close">
+					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+				</a>
+				
+			</div>
+		</div>
+	</div>
+          	<div id="modal0" class="modal modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<h3 style="margin: 0 0 0 0;">Alex Eberhart</h3>
+				<h3><em>Senior</em></h3>
+
+<h4><strong>Hometown:</strong> Athens, GA
+
+<br><strong>Major:</strong> Public Relations and Psychology/Spanish
+
+<br><strong>Campus Activities:</strong> Young Life, Public Relations Student Society of America (PRSSA) – Vice President, Berry College ESL Program, Presidential Ambassadors, Intramurals
+				
+				<!-- modal close button -->
+				<a href="" class="modal__close close">
+					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+				</a>
+				
+			</div>
+		</div>
+	</div>
+	
+<div id="modal1-1" class="modal modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<h3 style="margin: 0 0 0 0;">Brayden Fulton</h3>
+				<h3><em>Sophomore</em></h3>
+
+<h4><strong>Hometown:</strong> Sevierville, TN 
+
+<br><strong>Major:</strong> Accounting
+
+<br><strong>Campus Activities:</strong> Berry Cross Country/ Track Team, Youth Leader at First Presbyterian Church of Rome
+
+				
+				<!-- modal close button -->
+				<a href="" class="modal__close close">
+					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+				</a>
+				
+			</div>
+		</div>
+	</div>
+
+	<div id="modal1-2" class="modal modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<h3 style="margin: 0 0 0 0;">Kim Lince</h3>
+				<h3><em>Sophomore</em></h3>
+
+<h4><strong>Hometown:</strong> Kenosha, WI 
+
+<br><strong>Major:</strong> Animal Science/Chemistry
+
+<br><strong>Campus Activities:</strong> Honors Program – Treasurer and Committee Leader, Leadership Fellows, Emerging Leaders, Colleges Against Cancer, Pre-Vet Club, Young Life, Merit Scholarship, Yellow Ribbon Benefits 
+
+				
+				<!-- modal close button -->
+				<a href="" class="modal__close close">
+					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div id="modal2-1" class="modal modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<h3 style="margin: 0 0 0 0;">Bailey Dingley</h3>
+				<h3><em>Sophomore</em></h3>
+
+<h4><strong>Hometown:</strong> Woodstock, GA
+
+<br><strong>Major:</strong> Public Relations and Spanish Minor
+
+<br><strong>Campus Activities:</strong> Gate of Opportunity Scholar, Berry College Forensics Union, Presidential Ambassador, SGA – Sophomore Class President, Gate Ambassador
+				
+				<!-- modal close button -->
+				<a href="" class="modal__close close">
+					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+				</a>
+				
+			</div>
+		</div>
+	</div>
+
+	<div id="modal2-2" class="modal modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<h3 style="margin: 0 0 0 0;">Davis Murphy</h3>
+				<h3><em>Sophomore</em></h3>
+
+<h4><strong>Hometown:</strong> Peachtree City, GA 
+
+<br><strong>Major:</strong> Management
+
+<br><strong>Campus Activities:</strong> Emerging Leaders, Presidential Scholar, Berry College Alternate Realities (BCAR)
+
+
+				
+				<!-- modal close button -->
+				<a href="" class="modal__close close">
+					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+				</a>
+			</div>
+		</div>
+	</div>
+          	<div id="modal3-1" class="modal modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<h3 style="margin: 0 0 0 0; font-size: 40px;">Momo Abdellatif</h3>
+				<h3><em>Junior</em></h3>
+
+<h4><strong>Hometown:</strong> Rome, GA
+
+<br><strong>Major:</strong> Political Science and Minors in Business Administration and Economics
+
+<br><strong>Campus Activities:</strong> Gate Scholar, Politics and Law Society, Honors Program, SGA, Model UN, Berry International Club, Lambda Sigma, Emerging Leaders, Berry College Integrity in Leadership (BCIL)
+
+				
+				<!-- modal close button -->
+				<a href="" class="modal__close close">
+					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div id="modal3-2" class="modal modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<h3 style="margin: 0 0 0 0;">Ally Smith</h3>
+				<h3><em>Junior</em></h3>
+
+<h4><strong>Hometown:</strong> Clarksville, TN 
+
+<br><strong>Major:</strong> Mathematics/Economics
+
+<br><strong>Campus Activities:</strong> Berry Golf team, Dead Poets Society, Berry College Republicans, Beta Gamma Sigma Business Honor Society 
+
+				
+				<!-- modal close button -->
+				<a href="" class="modal__close close">
+					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+				</a>
+				
+			</div>
+		</div>
+	</div>
+	<div id="modal4-1" class="modal modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<h3 style="margin: 0 0 0 0;">Brook Davis-Brown</h3>
+				<h3><em>Junior</em></h3>
+
+<h4><strong>Hometown:</strong> Social Circle, GA  
+
+<br><strong>Major:</strong> Psychology and Business Minor
+
+<br><strong>Campus Activities:</strong> Psych Society – Secretary, Psi Chi – Vice President, Omicron Delta Kappa – vice President of External Affairs
+
+				
+				<!-- modal close button -->
+				<a href="" class="modal__close close">
+					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+				</a>
+			</div>
+		</div>
+	</div>
+     	<div id="modal4-2" class="modal modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<h3 style="margin: 0 0 0 0;">Ryan Moran</h3>
+				<h3><em>Sophomore</em></h3>
+
+<h4><strong>Hometown:</strong> Charlotte, NC
+
+<br><strong>Major:</strong> Marketing -International Business and Spanish Minor
+
+<br><strong>Campus Activities:</strong> Winshape College Program, House Church, First Year Council, Berry College ESL Program
+
+				
+				<!-- modal close button -->
+				<a href="" class="modal__close close">
+					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+				</a>
+			</div>
+		</div>
+	</div>
+          	<div id="modal5-1" class="modal modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<h3 style="margin: 0 0 0 0;">Chris Arnold</h3>
+				<h3><em>Sophomore</em></h3>
+
+<h4><strong>Hometown:</strong> Chattanooga, TN
+
+<br><strong>Major:</strong> Biochemistry
+
+<br><strong>Campus Activities:</strong> Zumba at Berry, Pro Allied Health Club, Intramurals, Black Student Alliance
+
+				
+				<!-- modal close button -->
+				<a href="" class="modal__close close">
+					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+				</a>
+				
+			</div>
+		</div>
+	</div>
+
+	<div id="modal5-2" class="modal modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<h3 style="margin: 0 0 0 0;">Analy Huerta</h3>
+				<h3><em>Senior</em></h3>
+
+<h4><strong>Hometown:</strong> Loganville, GA  
+
+<br><strong>Major:</strong> Marketing-International Business
+
+<br><strong>Campus Activities:</strong> President- Berry International Club, Orgullo, Sales Team, MISP Committee, Campus Outreach, Catholic Student Association
+
+				
+				<!-- modal close button -->
+				<a href="" class="modal__close close">
+					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div id="modal6-1" class="modal modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<h3 style="margin: 0 0 0 0;">Elliette McElroy  </h3>
+				<h3><em>Junior</em></h3>
+
+<h4><strong>Hometown:</strong> Alpharetta, GA
+
+<br><strong>Major:</strong> Finance - Accounting
+
+<br><strong>Campus Activities:</strong> Equestrian Team, Orchestra, Intramurals
+				
+				<!-- modal close button -->
+				<a href="" class="modal__close close">
+					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+				</a>
+				
+			</div>
+		</div>
+	</div>
+
+	<div id="modal6-2" class="modal modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<h3 style="margin: 0 0 0 0;">Brandon Palmer</h3>
+				<h3><em>Sophomore</em></h3>
+
+<h4><strong>Hometown:</strong> Macon, GA  
+
+<br><strong>Major:</strong> Undeclared
+
+<br><strong>Campus Activities:</strong> Berry Football Team, Men's Ministry, Emerging Leaders 
+				
+				<!-- modal close button -->
+				<a href="" class="modal__close close">
+					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+				</a>
+			</div>
+		</div>
+	</div>
+          	<div id="modal7-1" class="modal modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<h3 style="margin: 0 0 0 0;">Franklin Staples </h3>
+				<h3><em>Sophomore</em></h3>
+                
+<h4><strong>Hometown:</strong> Dadeville, AL
+    
+<strong>Major:</strong>  Bio-Chemistry and Business Minor
+
+<br><strong>Campus Activities:</strong> Winshape College Program, Club Frisbee Team, Emerging Leaders Program, Presidential Ambassador
+
+				
+				<!-- modal close button -->
+				<a href="" class="modal__close close">
+					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div id="modal7-2" class="modal modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<h3 style="margin: 0 0 0 0;">Kelley DeLacey</h3>
+				<h3><em>Junior</em></h3>
+
+<h4><strong>Hometown:</strong> Ijamsville, MD 
+
+<br><strong>Major:</strong> Animal Science/Chemistry
+
+<strong>Campus Activities:</strong> Berry Track and Field Captain, FFA Treasurer, Pre-Vet Club, Block and Bridle
+
+				
+				<!-- modal close button -->
+				<a href="" class="modal__close close">
+					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+				</a>
+				
+			</div>
+		</div>
+	</div>
+	<div id="modal8-1" class="modal modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<h3 style="margin: 0 0 0 0;">Danielle Bowling</h3>
+				<h3><em>Junior</em></h3>
+
+<h4><strong>Hometown:</strong> Powder Springs, GA
+
+<br><strong>Major:</strong> Nursing
+
+<br><strong>Campus Activities:</strong> Leadership Fellows, Lambda Sigma National Honor Society, Marthapalooza Committee, Finals Fest 2017
+				
+				<!-- modal close button -->
+				<a href="" class="modal__close close">
+					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+				</a>
+			</div>
+		</div>
+	</div>
+     	<div id="modal8-2" class="modal modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<h3 style="margin: 0 0 0 0;">Luke Stubbs</h3>
+				<h3><em>Junior</em></h3>
+
+<h4><strong>Hometown:</strong> Marietta, GA 
+
+<br><strong>Major:</strong> Exercise Science
+
+<br><strong>Campus Activities:</strong> Winshape College Program, Orchestra, String Quartet, Intramurals
+				
+				<!-- modal close button -->
+				<a href="" class="modal__close close">
+					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+				</a>
+			</div>
+		</div>
+	</div>
+          	<div id="modal9-1" class="modal modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<h3 style="margin: 0 0 0 0;">Antonio Brown</h3>
+				<h3><em>Sophomore</em></h3>
+
+<h4><strong>Hometown:</strong> Carrollton, GA
+    
+<br><strong>Major:</strong> History/Secondary Education    
+
+<br><strong>Campus Activities:</strong> Berry Football Team, Berry Track and Field, Finals Fest Committee, Presidential Ambassador, Emerging Leaders 
+				
+				<!-- modal close button -->
+				<a href="" class="modal__close close">
+					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+				</a>
+			</div>
+		</div>
+	</div>
+     	<div id="modal9-2" class="modal modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<h3 style="margin: 0 0 0 0;">Megan Radosta</h3>
+				<h3><em>Junior</em></h3>
+
+<h4><strong>Hometown:</strong> Sandy Springs, GA  
+
+<br><strong>Major:</strong> Marketing/Public Relations
+
+<br><strong>Campus Activities:</strong> Berry Women's Soccer Team, Athletes Bettering the Community (ABC), Presidential Ambassador, Intramurals
+				
+				<!-- modal close button -->
+				<a href="" class="modal__close close">
+					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+				</a>
+			</div>
+		</div>
+	</div>
+               
+      </main>
+    </div>
+
+    <script src="nav.js"></script><script src="assets/material.js"></script>
+      <script>var Modal = (function() {
+
+  var trigger = $qsa('.modal__trigger'); // what you click to activate the modal
+  var modals = $qsa('.modal'); // the entire modal (takes up entire window)
+  var modalsbg = $qsa('.modal__bg'); // the entire modal (takes up entire window)
+  var content = $qsa('.modal__content'); // the inner content of the modal
+	var closers = $qsa('.modal__close'); // an element used to close the modal
+  var w = window;
+  var isOpen = false;
+	var contentDelay = 400; // duration after you click the button and wait for the content to show
+  var len = trigger.length;
+
+  // make it easier for yourself by not having to type as much to select an element
+  function $qsa(el) {
+    return document.querySelectorAll(el);
+  }
+
+  var getId = function(event) {
+
+    event.preventDefault();
+    var self = this;
+    // get the value of the data-modal attribute from the button
+    var modalId = self.dataset.modal;
+    var len = modalId.length;
+    // remove the '#' from the string
+    var modalIdTrimmed = modalId.substring(1, len);
+    // select the modal we want to activate
+    var modal = document.getElementById(modalIdTrimmed);
+    // execute function that creates the temporary expanding div
+    makeDiv(self, modal);
+  };
+
+  var makeDiv = function(self, modal) {
+
+    var fakediv = document.getElementById('modal__temp');
+
+    /**
+     * if there isn't a 'fakediv', create one and append it to the button that was
+     * clicked. after that execute the function 'moveTrig' which handles the animations.
+     */
+
+    if (fakediv === null) {
+      var div = document.createElement('div');
+      div.id = 'modal__temp';
+      self.appendChild(div);
+      moveTrig(self, modal, div);
+    }
+  };
+
+  var moveTrig = function(trig, modal, div) {
+    var trigProps = trig.getBoundingClientRect();
+    var m = modal;
+    var mProps = m.querySelector('.modal__content').getBoundingClientRect();
+    var transX, transY, scaleX, scaleY;
+    var xc = w.innerWidth / 2;
+    var yc = w.innerHeight / 2;
+
+    // this class increases z-index value so the button goes overtop the other buttons
+    trig.classList.add('modal__trigger--active');
+
+    // these values are used for scale the temporary div to the same size as the modal
+    scaleX = mProps.width / trigProps.width;
+    scaleY = mProps.height / trigProps.height;
+
+    scaleX = scaleX.toFixed(3); // round to 3 decimal places
+    scaleY = scaleY.toFixed(3);
+
+
+    // these values are used to move the button to the center of the window
+    transX = Math.round(xc - trigProps.left - trigProps.width / 2);
+    transY = Math.round(yc - trigProps.top - trigProps.height / 2);
+
+		// if the modal is aligned to the top then move the button to the center-y of the modal instead of the window
+    if (m.classList.contains('modal--align-top')) {
+      transY = Math.round(mProps.height / 2 + mProps.top - trigProps.top - trigProps.height / 2);
+    }
+
+
+		// translate button to center of screen
+		trig.style.transform = 'translate(' + transX + 'px, ' + transY + 'px)';
+		trig.style.webkitTransform = 'translate(' + transX + 'px, ' + transY + 'px)';
+		// expand temporary div to the same size as the modal
+		div.style.transform = 'scale(' + scaleX + ',' + scaleY + ')';
+		div.style.webkitTransform = 'scale(' + scaleX + ',' + scaleY + ')';
+
+
+		window.setTimeout(function() {
+			window.requestAnimationFrame(function() {
+				open(m, div);
+			});
+		}, contentDelay);
+
+  };
+
+  var open = function(m, div) {
+
+    if (!isOpen) {
+      // select the content inside the modal
+      var content = m.querySelector('.modal__content');
+      // reveal the modal
+      m.classList.add('modal--active');
+      // reveal the modal content
+      content.classList.add('modal__content--active');
+
+      /**
+       * when the modal content is finished transitioning, fadeout the temporary
+       * expanding div so when the window resizes it isn't visible ( it doesn't
+       * move with the window).
+       */
+
+      content.addEventListener('transitionend', hideDiv, false);
+
+      isOpen = true;
+    }
+
+    function hideDiv() {
+      // fadeout div so that it can't be seen when the window is resized
+      div.style.opacity = '0';
+      content.removeEventListener('transitionend', hideDiv, false);
+    }
+  };
+
+  var close = function(event) {
+
+		event.preventDefault();
+    event.stopImmediatePropagation();
+
+    var target = event.target;
+    var div = document.getElementById('modal__temp');
+
+    /**
+     * make sure the modal__bg or modal__close was clicked, we don't want to be able to click
+     * inside the modal and have it close.
+     */
+
+    if (isOpen && target.classList.contains('modal__bg') || target.classList.contains('modal__close')) {
+
+      // make the hidden div visible again and remove the transforms so it scales back to its original size
+      div.style.opacity = '1';
+      div.removeAttribute('style');
+
+			/**
+			* iterate through the modals and modal contents and triggers to remove their active classes.
+      * remove the inline css from the trigger to move it back into its original position.
+			*/
+
+			for (var i = 0; i < len; i++) {
+				modals[i].classList.remove('modal--active');
+				content[i].classList.remove('modal__content--active');
+				trigger[i].style.transform = 'none';
+        trigger[i].style.webkitTransform = 'none';
+				trigger[i].classList.remove('modal__trigger--active');
+			}
+
+      // when the temporary div is opacity:1 again, we want to remove it from the dom
+			div.addEventListener('transitionend', removeDiv, false);
+
+      isOpen = false;
+
+    }
+
+    function removeDiv() {
+      setTimeout(function() {
+        window.requestAnimationFrame(function() {
+          // remove the temp div from the dom with a slight delay so the animation looks good
+          div.remove();
+        });
+      }, contentDelay - 50);
+    }
+
+  };
+
+  var bindActions = function() {
+    for (var i = 0; i < len; i++) {
+      trigger[i].addEventListener('click', getId, false);
+      closers[i].addEventListener('click', close, false);
+      modalsbg[i].addEventListener('click', close, false);
+    }
+  };
+
+  var init = function() {
+    bindActions();
+  };
+
+  return {
+    init: init
+  };
+
+}());
+
+Modal.init();</script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+  </body>
+</html>

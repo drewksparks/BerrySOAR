@@ -1,0 +1,5 @@
+XSym
+0060
+7d93665d5f366391aa232fed11b3a17a
+../../../UrbanAirship-iOS-SDK/Airship/Common/UARegionEvent.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   

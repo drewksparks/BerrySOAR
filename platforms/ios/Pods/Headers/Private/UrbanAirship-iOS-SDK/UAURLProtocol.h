@@ -1,0 +1,5 @@
+XSym
+0060
+57bd3d39d46e311ca5ae58600bb513e1
+../../../UrbanAirship-iOS-SDK/Airship/Common/UAURLProtocol.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   

@@ -1,0 +1,482 @@
+
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html lang="en">
+  <head>
+	 <script src="assets/jquery.min.js"></script><meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    <title>SOAR 2017</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/material.css">
+    <link rel="stylesheet" href="assets/styles.css">
+	  <style>
+	  @font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url(assets/material-font.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+          body.mode-search {
+  overflow: hidden;
+}
+body.mode-search .form,
+body.mode-search .icon-close {
+  opacity: 1;
+  transform: none;
+  pointer-events: all;
+}
+body.mode-search .control .icon-search {
+  opacity: 0;
+}
+body.mode-search .control .btn {
+  transform: scale(70);
+  opacity: 1;
+}
+
+.control {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+}
+.control .icon-search,
+.control .icon-close {
+  transition: 0.2s ease-in-out;
+}
+.control:hover .btn {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+/* Button */
+.btn {
+  width: 60px;
+  height: 55px;
+  border-radius: 100%;
+  box-sizing: border-box;
+  padding-right: 100px;
+  background: #15397F;
+  outline: 0;
+  transform-origin: 50%;
+  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+}
+
+.icon-search {
+  position: absolute;
+  top: 18px;
+  left: 20px;
+  font-size: 28px;
+  color: #FFF;
+}
+
+.icon-close {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  color: #FFF;
+  font-size: 80px;
+  opacity: 0;
+  transform: translate(10px, 0) rotate(90deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.form {
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  margin-top: -40px;
+  pointer-events: none;
+  opacity: 0;
+  transform: translate(40px, 0);
+  transition: all 0.3s ease-in-out;
+}
+.form input {
+  color: #fff;
+  font-size: 2em;
+  border: 0;
+  background: transparent;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  outline: 0;
+  font-weight: 200;
+}
+.form ::-webkit-input-placeholder {
+  color: #EEE;
+}
+.form :-moz-placeholder {
+  color: #EEE;
+  opacity: 1;
+}
+.form ::-moz-placeholder {
+  color: #EEE;
+  opacity: 1;
+}
+.form :-ms-input-placeholder {
+  color: #EEE;
+}
+	  </style>
+  </head>
+    
+    
+  <body>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
+            mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+      
+    <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">Helpful Links</span>
+      <div class="mdl-layout-spacer"></div>
+
+  <div class="control" tabindex="1">
+    <i class="icon-search ion-search material-icons">search</i>
+      <div class="btn"></div>
+  </div>
+<i class="icon-close ion-ios-close-empty material-icons">close</i>
+<div class="form">
+<form action="http://berry.edu/Templates/searchresults.aspx?q=">
+  <input type="search" name="q" placeholder="Search berry.edu">
+</form>
+  </div>
+    </div>
+  </header>
+      <div class="drawer mdl-layout__drawer mdl-color--grey-900 mdl-color-text--grey-50">
+        <header class="drawer-header">
+          <div class="avatar-dropdown">
+            <span>SOAR 2017</span>
+            <div class="mdl-layout-spacer"></div>
+          </div>
+        </header>
+  
+<nav id="main-nav" class="navigation mdl-navigation mdl-color--grey-800">
+          <a class="mdl-navigation__link" href="index.html"><i class="mdl-color-text--grey-400 material-icons" role="presentation">home</i>Home</a>
+          <a class="mdl-navigation__link" href="schedule.html"><i class="mdl-color-text--grey-400 material-icons" role="presentation">event_note</i>Schedule</a>
+          <a class="mdl-navigation__link" href="faq.html"><i class="mdl-color-text--grey-400 material-icons" role="presentation">help</i>FAQ</a>
+          <a class="mdl-navigation__link" href="leaders.html"><i class="mdl-color-text--grey-400 material-icons" role="presentation">wc</i>SOAR Leaders</a>
+          <a class="mdl-navigation__link" href="instagram://tag?name=BerrySOAR17"><i class="mdl-color-text--grey-400 material-icons" role="presentation">add_a_photo</i>Share Photos</a>
+          <a class="mdl-navigation__link" href="links.html"><i class="mdl-color-text--grey-400 material-icons" role="presentation">flag</i>Informative Links</a>
+          <a class="mdl-navigation__link" href="survey.html"><i class="mdl-color-text--grey-400 material-icons" role="presentation">poll</i>Survey</a>
+            <a class="mdl-navigation__link" href="map.html"><i class="mdl-color-text--grey-400 material-icons" role="presentation">map</i>Campus Map</a>
+                       <div id="deviceready" class="blink" style="padding-top:20%;">
+                <p class="event listening mdl-color-text--grey-700"></p>
+<!--REMOVE IN RELEASE -->
+            
+                           
+                           <!-- END REMOVE IN RELEASE -->
+                           
+                <p class="event received mdl-color-text--grey-800"></p>
+            </div>
+          
+        </nav>
+
+      </div>
+<style>
+.list-width {
+  width: 95%;
+}
+</style>
+<main class="mdl-layout__content mdl-color--grey-100">
+<ul class="list-width mdl-list">
+  <li class="mdl-list__item mdl-list__item--three-line">
+    <span class="mdl-list__item-primary-content"><a style="color:rgba(0,0,0, 0.87); text-decoration: none" href="links/asc.html">
+      <i class="material-icons mdl-list__item-avatar">edit</i>
+        <span><b>Academic Success Center</b></span>
+      <span class="mdl-list__item-text-body">
+        Tutoring, academic counseling and other disability support.
+      </span></a>
+    </span>
+</li>
+      <li class="mdl-list__item mdl-list__item--three-line">
+    <span class="mdl-list__item-primary-content">
+        <a id="athletics"></a>
+        <a style="color:rgba(0,0,0, 0.87); text-decoration: none" href="links/athletics.html">
+      <i class="material-icons  mdl-list__item-avatar">directions_run</i>
+        <span><b>Athletics</b></span>
+      <span class="mdl-list__item-text-body">
+        Sports schedules and additional information.
+      </span></a>
+    </span>
+<!--<span class="mdl-list__item-secondary-content">
+      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+    </span> -->
+    <!--<span class="mdl-list__item-secondary-content">
+      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+    </span> -->
+  </li>
+  <li class="mdl-list__item mdl-list__item--three-line">
+    <span class="mdl-list__item-primary-content">
+        <a id="businessservices"></a>
+        <a style="color:rgba(0,0,0, 0.87); text-decoration: none" href="links/businessservices.html">
+      <i class="material-icons  mdl-list__item-avatar">business_center</i>
+        <span><b>Business Services</b></span>
+      <span class="mdl-list__item-text-body">
+       Cashiers office, payroll services.
+      </span></a>
+    </span>
+<!--<span class="mdl-list__item-secondary-content">
+      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+    </span> -->
+  </li>
+  <li class="mdl-list__item mdl-list__item--three-line">
+    <span class="mdl-list__item-primary-content">
+        <a id="counseling"></a>
+        <a style="color:rgba(0,0,0, 0.87); text-decoration: none" href="links/counseling.html">
+      <i class="material-icons  mdl-list__item-avatar">spa</i>
+        <span><b>Counseling Center</b></span>
+      <span class="mdl-list__item-text-body">
+        Access free campus counseling, with Dr. Jenkins and Dr. Cordle.
+      </span></a>
+    </span>
+<!--<span class="mdl-list__item-secondary-content">
+      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+    </span> -->
+  </li>
+      <li class="mdl-list__item mdl-list__item--three-line">
+    <span class="mdl-list__item-primary-content">
+        <a id="dining"></a>
+        <a style="color:rgba(0,0,0, 0.87); text-decoration: none" href="links/dining.html">
+      <i class="material-icons  mdl-list__item-avatar">restaurant</i>
+        <span><b>Dining</b></span>
+      <span class="mdl-list__item-text-body">
+        Meal plan specifics, how your meal plan works, FlexBucks.
+      </span></a>
+    </span>
+<!--<span class="mdl-list__item-secondary-content">
+      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+    </span> -->
+  </li>
+      <li class="mdl-list__item mdl-list__item--three-line">
+    <span class="mdl-list__item-primary-content">
+        <a id="finaid"></a>
+        <a style="color:rgba(0,0,0, 0.87); text-decoration: none" href="links/finaid.html">
+      <i class="material-icons  mdl-list__item-avatar">local_atm</i>
+        <span><b>Financial Aid</b></span>
+      <span class="mdl-list__item-text-body">
+        Get help with federal, state, and Berry assistance.
+      </span></a>
+    </span>
+<!--<span class="mdl-list__item-secondary-content">
+      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+    </span> -->
+  </li>
+  <li class="mdl-list__item mdl-list__item--three-line">
+    <span class="mdl-list__item-primary-content">
+        <a id="involved"></a>
+        <a style="color:rgba(0,0,0, 0.87); text-decoration: none" href="links/involved.html">
+      <i class="material-icons  mdl-list__item-avatar">people_outline</i>
+        <span><b>Get Involved</b></span>
+      <span class="mdl-list__item-text-body">
+        Get involved in student life on campus. 
+      </span></a>
+    </span>
+<!--<span class="mdl-list__item-secondary-content">
+      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+    </span> -->
+  </li>
+      <li class="mdl-list__item mdl-list__item--three-line">
+    <span class="mdl-list__item-primary-content">
+        <a id="folang"></a>
+        <a style="color:rgba(0,0,0, 0.87); text-decoration: none" href="links/folang.html">
+      <i class="material-icons  mdl-list__item-avatar">hearing</i>
+        <span><b>Foreign Language</b></span>
+      <span class="mdl-list__item-text-body">
+        Placement policies and exam links. 
+      </span></a>
+    </span>
+<!--<span class="mdl-list__item-secondary-content">
+      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+    </span> -->
+  </li>
+      <li class="mdl-list__item mdl-list__item--three-line">
+    <span class="mdl-list__item-primary-content">
+        <a id="healthandwellness"></a>
+        <a style="color:rgba(0,0,0, 0.87); text-decoration: none" href="links/healthandwellness.html">
+      <i class="material-icons  mdl-list__item-avatar">healing</i>
+        <span><b>Health and Wellness Center</b></span>
+      <span class="mdl-list__item-text-body">
+        Hours, what is offered, free over-the-counter medicine
+      </span></a>
+    </span>
+<!--<span class="mdl-list__item-secondary-content">
+      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+    </span> -->
+  </li>
+      <li class="mdl-list__item mdl-list__item--three-line">
+    <span class="mdl-list__item-primary-content">
+        <a id="infotech"></a>
+        <a style="color:rgba(0,0,0, 0.87); text-decoration: none" href="links/infotech.html">
+      <i class="material-icons  mdl-list__item-avatar">phonelink</i>
+        <span><b>Information Technology</b></span>
+      <span class="mdl-list__item-text-body">
+        Computer requirements, Wireless network help, tech support.
+      </span></a>
+    </span>
+<!--<span class="mdl-list__item-secondary-content">
+      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+    </span> -->
+  </li>
+      <li class="mdl-list__item mdl-list__item--three-line">
+    <span class="mdl-list__item-primary-content">
+        <a id="library"></a>
+        <a style="color:rgba(0,0,0, 0.87); text-decoration: none" href="links/library.html">
+      <i class="material-icons  mdl-list__item-avatar">local_library</i>
+        <span><b>Library</b></span>
+      <span class="mdl-list__item-text-body">
+        Library policies and hours
+      </span></a>
+    </span>
+<!--<span class="mdl-list__item-secondary-content">
+      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+    </span> -->
+  </li>
+      <li class="mdl-list__item mdl-list__item--three-line">
+    <span class="mdl-list__item-primary-content">
+        <a id="multiinter"></a>
+        <a style="color:rgba(0,0,0, 0.87); text-decoration: none" href="links/multiinter.html">
+      <i class="material-icons  mdl-list__item-avatar">language</i>
+        <span><b>Multicultural &amp; Int'l</b></span>
+      <span class="mdl-list__item-text-body">
+        Information on programs, groups, and activities.
+      </span></a>
+    </span>
+<!--<span class="mdl-list__item-secondary-content">
+      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+    </span> -->
+  </li>
+      <li class="mdl-list__item mdl-list__item--three-line">
+    <span class="mdl-list__item-primary-content">
+        <a id="newfaces"></a>
+        <a style="color:rgba(0,0,0, 0.87); text-decoration: none" href="links/newfaces.html">
+      <i class="material-icons  mdl-list__item-avatar">music_note</i>
+        <span><b>New Faces Showcase</b></span>
+      <span class="mdl-list__item-text-body">
+        Talent shows, dances, and more!
+      </span></a>
+    </span>
+<!--<span class="mdl-list__item-secondary-content">
+      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+    </span> -->
+  
+  </li>
+          <li class="mdl-list__item mdl-list__item--three-line">
+    <span class="mdl-list__item-primary-content">
+        <a id="police"></a>
+        <a style="color:rgba(0,0,0, 0.87); text-decoration: none" href="links/police.html">
+      <i class="material-icons  mdl-list__item-avatar">security</i>
+        <span><b>Campus Safety</b></span>
+      <span class="mdl-list__item-text-body">
+        Berry College Police contact and policies.
+      </span></a>
+    </span>
+<!--<span class="mdl-list__item-secondary-content">
+      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+    </span> -->
+  </li>
+          <li class="mdl-list__item mdl-list__item--three-line">
+    <span class="mdl-list__item-primary-content">
+        <a id="religiouslife"></a>
+        <a style="color:rgba(0,0,0, 0.87); text-decoration: none" href="links/religiouslife.html">
+      <i class="material-icons  mdl-list__item-avatar">book</i>
+        <span><b>Religious Life</b></span>
+      <span class="mdl-list__item-text-body">
+        Access group information, Chaplain's office contact.
+      </span></a>
+    </span>
+<!--<span class="mdl-list__item-secondary-content">
+      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+    </span> -->
+  </li>
+          <li class="mdl-list__item mdl-list__item--three-line">
+    <span class="mdl-list__item-primary-content">
+        <a id="textbooks"></a>
+        <a style="color:rgba(0,0,0, 0.87); text-decoration: none" href="links/textbooks.html">
+      <i class="material-icons  mdl-list__item-avatar">import_contacts</i>
+        <span><b>Textbooks</b></span>
+      <span class="mdl-list__item-text-body">
+        Berry Bookstore information, other sources for textbooks.
+      </span></a>
+    </span>
+<!--<span class="mdl-list__item-secondary-content">
+      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+    </span> -->
+  </li>
+          <li class="mdl-list__item mdl-list__item--three-line">
+    <span class="mdl-list__item-primary-content">
+        <a id="whattobring"></a>
+        <a style="color:rgba(0,0,0, 0.87); text-decoration: none" href="links/whattobring.html">
+      <i class="material-icons  mdl-list__item-avatar">format_list_bulleted</i>
+        <span><b>What to Bring</b></span>
+      <span class="mdl-list__item-text-body">
+        Don't forget anything important! Complete checklist.
+      </span></a>
+    </span>
+<!--<span class="mdl-list__item-secondary-content">
+      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+    </span> -->
+  </li>
+          <li class="mdl-list__item mdl-list__item--three-line">
+    <span class="mdl-list__item-primary-content">
+        <a id="workexp"></a>
+        <a style="color:rgba(0,0,0, 0.87); text-decoration: none" href="links/workexp.html">
+      <i class="material-icons  mdl-list__item-avatar">group_work</i>
+        <span><b>Work Experience</b></span>
+      <span class="mdl-list__item-text-body">
+        How the program works, with contact and other resources.
+      </span></a>
+    </span>
+<!--<span class="mdl-list__item-secondary-content">
+      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+    </span> -->
+  </li>
+  
+</ul>
+    </main>
+    </div>
+    
+
+    <script src="nav.js"></script><script src="assets/material.js"></script>
+	
+      <script src='assets/jquery.min.js'></script>
+      <script src="js/search.js"></script>
+  </body>
+</html>

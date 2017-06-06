@@ -1,0 +1,5 @@
+XSym
+0067
+42637bdd3510e2215899eb88f68b56bb
+../../../UrbanAirship-iOS-SDK/Airship/Common/UAMediaEventTemplate.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            

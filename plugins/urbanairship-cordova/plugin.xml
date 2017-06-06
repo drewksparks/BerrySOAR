@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="urbanairship-cordova"
+    version="6.6.0">
+
+    <name>Urban Airship</name>
+    <description>Urban Airship Cordova plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,urbanairship</keywords>
+    <repo>https://github.com/urbanairship/phonegap-ua-push.git</repo>
+    
+    <engines>
+        <engine name="cordova-android" version=">=4.1.0" />
+        <engine name="cordova-ios" version=">=4.3.0" />
+        <engine name="cordova-plugman" version=">=4.2.0" />
+    </engines>
+
+    <js-module src="www/UrbanAirship.js" name="UrbanAirship">
+         <clobbers target="UAirship" />
+     </js-module>
+
+    <!-- android -->
+    <platform name="android">
+
+        <config-file target="res/xml/config.xml" parent="/widget">
+            <feature name="UAirship">
+                <param name="android-package" value="com.urbanairship.cordova.UAirshipPlugin"/>
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <meta-data android:name="com.urbanairship.autopilot" android:value="com.urbanairship.cordova.CordovaAutopilot" />
+
+            <receiver android:name="com.urbanairship.cordova.CordovaAirshipReceiver"
+                        android:exported="false">
+
+                <intent-filter>
+                    <action android:name="com.urbanairship.push.CHANNEL_UPDATED" />
+                    <action android:name="com.urbanairship.push.OPENED" />
+                    <action android:name="com.urbanairship.push.DISMISSED" />
+                    <action android:name="com.urbanairship.push.RECEIVED" />
+                    <category android:name="$PACKAGE_NAME" />
+                </intent-filter>
+            </receiver>
+
+            <activity android:name="com.urbanairship.messagecenter.MessageActivity" android:theme="@android:style/Theme.DeviceDefault.Light"/>
+            <activity android:name="com.urbanairship.messagecenter.MessageCenterActivity" android:theme="@android:style/Theme.DeviceDefault.Light"/>
+
+            <activity
+                xmlns:tools="http://schemas.android.com/tools"
+                tools:node="replace"
+                android:name="com.urbanairship.actions.LandingPageActivity"
+                android:theme="@style/LandingPageStyle"
+                android:exported="false">
+
+                <meta-data
+                    android:name="com.urbanairship.action.LANDING_PAGE_VIEW"
+                    android:resource="@layout/ua_activity_landing_page" />
+
+                <meta-data
+                    android:name="com.urbanairship.push.iam.EXCLUDE_FROM_AUTO_SHOW"
+                    android:value="true" />
+
+                <intent-filter>
+                    <action android:name="com.urbanairship.actions.SHOW_LANDING_PAGE_INTENT_ACTION"/>
+                    <data android:scheme="http" />
+                    <data android:scheme="https" />
+                    <data android:scheme="message" />
+                    <category android:name="android.intent.category.DEFAULT"/>
+                </intent-filter>
+            </activity>
+
+        <activity android:name="com.urbanairship.cordova.CustomMessageActivity"
+                  android:theme="@android:style/Theme.DeviceDefault.Light">
+            <intent-filter>
+                <action android:name="com.urbanairship.VIEW_RICH_PUSH_MESSAGE" />
+                <data android:scheme="message"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+            <activity
+                android:name="com.urbanairship.cordova.CustomMessageCenterActivity"
+                android:launchMode="singleTask"
+                android:theme="@android:style/Theme.DeviceDefault.Light">
+
+                <intent-filter>
+                    <action android:name="com.urbanairship.VIEW_RICH_PUSH_INBOX" />
+                    <category android:name="android.intent.category.DEFAULT" />
+                </intent-filter>
+            </activity>
+
+            <activity android:name="com.urbanairship.cordova.CustomLandingPageActivity"
+                  xmlns:tools="http://schemas.android.com/tools"
+                  android:exported="false" android:theme="@style/LandingPageStyle"
+                  tools:node="replace">
+                <meta-data android:name="com.urbanairship.action.LANDING_PAGE_VIEW"
+                           android:resource="@layout/ua_activity_landing_page"/>
+                <meta-data android:name="com.urbanairship.push.iam.EXCLUDE_FROM_AUTO_SHOW"
+                           android:value="true"/>
+                <intent-filter>
+                    <action android:name="com.urbanairship.actions.SHOW_LANDING_PAGE_INTENT_ACTION"/>
+                    <data android:scheme="http"/>
+                    <data android:scheme="https"/>
+                    <data android:scheme="message"/>
+                    <category android:name="android.intent.category.DEFAULT"/>
+                </intent-filter>
+            </activity>
+
+        </config-file>
+
+        <source-file src="src/android/UAirshipPlugin.java" target-dir="src/com/urbanairship/cordova" />
+        <source-file src="src/android/CordovaAirshipReceiver.java" target-dir="src/com/urbanairship/cordova" />
+        <source-file src="src/android/CordovaAutopilot.java" target-dir="src/com/urbanairship/cordova" />
+        <source-file src="src/android/CordovaLandingPageView.java" target-dir="src/com/urbanairship/cordova" />
+        <source-file src="src/android/CustomMessageActivity.java" target-dir="src/com/urbanairship/cordova" />
+        <source-file src="src/android/CustomMessageCenterActivity.java" target-dir="src/com/urbanairship/cordova" />
+        <source-file src="src/android/CustomLandingPageActivity.java" target-dir="src/com/urbanairship/cordova" />
+        <source-file src="src/android/UAirshipPluginManager.java" target-dir="src/com/urbanairship/cordova" />
+        <source-file src="src/android/events/ChannelEvent.java" target-dir="src/com/urbanairship/cordova/events" />
+        <source-file src="src/android/events/DeepLinkEvent.java" target-dir="src/com/urbanairship/cordova/events" />
+        <source-file src="src/android/events/InboxEvent.java" target-dir="src/com/urbanairship/cordova/events" />
+        <source-file src="src/android/events/PushEvent.java" target-dir="src/com/urbanairship/cordova/events" />
+        <source-file src="src/android/events/NotificationOpenedEvent.java" target-dir="src/com/urbanairship/cordova/events" />
+        <source-file src="src/android/events/Event.java" target-dir="src/com/urbanairship/cordova/events" />
+
+        <source-file src="src/android/res/layout/ua_activity_landing_page.xml" target-dir="res/layout"/>
+        <source-file src="src/android/res/values/ua_styles.xml" target-dir="res/values"/>
+        <source-file src="src/android/res/drawable-mdpi/ua_ic_close.png" target-dir="res/drawable-mdpi"/>
+        <source-file src="src/android/res/drawable-hdpi/ua_ic_close.png" target-dir="res/drawable-hdpi"/>
+        <source-file src="src/android/res/drawable-xhdpi/ua_ic_close.png" target-dir="res/drawable-xhdpi"/>
+        <source-file src="src/android/res/drawable-xxhdpi/ua_ic_close.png" target-dir="res/drawable-xxhdpi"/>
+        <source-file src="src/android/res/drawable-xxxhdpi/ua_ic_close.png" target-dir="res/drawable-xxxhdpi"/>
+
+        <framework src="src/android/build-extras.gradle" custom="true" type="gradleReference" />
+
+    </platform>
+    
+    <!-- ios -->
+    <platform name="ios">
+        
+         <!-- Background push -->
+        <config-file target="*-Info.plist" parent="UIBackgroundModes">
+            <array>
+                <string>remote-notification</string>
+            </array>
+        </config-file>
+
+        <config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription">
+            <string>Sample location</string>
+        </config-file>
+
+        <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
+            <string>Sample location, when in use</string>
+        </config-file>
+
+        <config-file target="config.xml" parent="/widget">
+             <feature name="UAirship">
+                <param name="ios-package" value="UAirshipPlugin" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+
+        <config-file parent="aps-environment" target="*/Entitlements-Debug.plist">
+          <string>development</string>
+        </config-file>
+
+        <config-file parent="aps-environment" target="*/Entitlements-Release.plist">
+          <string>production</string>
+        </config-file>
+
+        <header-file src="src/ios/UAirshipPlugin.h" />
+        <source-file src="src/ios/UAirshipPlugin.m" />
+        <header-file src="src/ios/UAMessageViewController.h" />
+        <source-file src="src/ios/UAMessageViewController.m" />
+
+        <framework src="UrbanAirship-iOS-SDK" type="podspec" spec="~> 8.0.5" />
+    </platform>
+</plugin>

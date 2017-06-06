@@ -1,0 +1,103 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/widget": [
+                        {
+                            "xml": "<feature name=\"UAirship\"><param name=\"android-package\" value=\"com.urbanairship.cordova.UAirshipPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        }
+                    ],
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"StatusBar\"><param name=\"android-package\" value=\"org.apache.cordova.statusbar.StatusBar\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "AndroidManifest.xml": {
+                "parents": {
+                    "/manifest/application": [
+                        {
+                            "xml": "<meta-data android:name=\"com.urbanairship.autopilot\" android:value=\"com.urbanairship.cordova.CordovaAutopilot\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<receiver android:exported=\"false\" android:name=\"com.urbanairship.cordova.CordovaAirshipReceiver\"><intent-filter><action android:name=\"com.urbanairship.push.CHANNEL_UPDATED\" /><action android:name=\"com.urbanairship.push.OPENED\" /><action android:name=\"com.urbanairship.push.DISMISSED\" /><action android:name=\"com.urbanairship.push.RECEIVED\" /><category android:name=\"io.cordova.hellocordova\" /></intent-filter></receiver>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<activity android:name=\"com.urbanairship.messagecenter.MessageActivity\" android:theme=\"@android:style/Theme.DeviceDefault.Light\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<activity android:name=\"com.urbanairship.messagecenter.MessageCenterActivity\" android:theme=\"@android:style/Theme.DeviceDefault.Light\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<activity android:exported=\"false\" android:name=\"com.urbanairship.actions.LandingPageActivity\" android:theme=\"@style/LandingPageStyle\" tools:node=\"replace\" xmlns:tools=\"http://schemas.android.com/tools\"><meta-data android:name=\"com.urbanairship.action.LANDING_PAGE_VIEW\" android:resource=\"@layout/ua_activity_landing_page\" /><meta-data android:name=\"com.urbanairship.push.iam.EXCLUDE_FROM_AUTO_SHOW\" android:value=\"true\" /><intent-filter><action android:name=\"com.urbanairship.actions.SHOW_LANDING_PAGE_INTENT_ACTION\" /><data android:scheme=\"http\" /><data android:scheme=\"https\" /><data android:scheme=\"message\" /><category android:name=\"android.intent.category.DEFAULT\" /></intent-filter></activity>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<activity android:name=\"com.urbanairship.cordova.CustomMessageActivity\" android:theme=\"@android:style/Theme.DeviceDefault.Light\"><intent-filter><action android:name=\"com.urbanairship.VIEW_RICH_PUSH_MESSAGE\" /><data android:scheme=\"message\" /><category android:name=\"android.intent.category.DEFAULT\" /></intent-filter></activity>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<activity android:launchMode=\"singleTask\" android:name=\"com.urbanairship.cordova.CustomMessageCenterActivity\" android:theme=\"@android:style/Theme.DeviceDefault.Light\"><intent-filter><action android:name=\"com.urbanairship.VIEW_RICH_PUSH_INBOX\" /><category android:name=\"android.intent.category.DEFAULT\" /></intent-filter></activity>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<activity android:exported=\"false\" android:name=\"com.urbanairship.cordova.CustomLandingPageActivity\" android:theme=\"@style/LandingPageStyle\" tools:node=\"replace\" xmlns:tools=\"http://schemas.android.com/tools\"><meta-data android:name=\"com.urbanairship.action.LANDING_PAGE_VIEW\" android:resource=\"@layout/ua_activity_landing_page\" /><meta-data android:name=\"com.urbanairship.push.iam.EXCLUDE_FROM_AUTO_SHOW\" android:value=\"true\" /><intent-filter><action android:name=\"com.urbanairship.actions.SHOW_LANDING_PAGE_INTENT_ACTION\" /><data android:scheme=\"http\" /><data android:scheme=\"https\" /><data android:scheme=\"message\" /><category android:name=\"android.intent.category.DEFAULT\" /></intent-filter></activity>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "urbanairship-cordova": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.berry.soar"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "id": "urbanairship-cordova.UrbanAirship",
+            "file": "plugins/urbanairship-cordova/www/UrbanAirship.js",
+            "pluginId": "urbanairship-cordova",
+            "clobbers": [
+                "UAirship"
+            ]
+        },
+        {
+            "id": "cordova-plugin-statusbar.statusbar",
+            "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
+            "pluginId": "cordova-plugin-statusbar",
+            "clobbers": [
+                "window.StatusBar"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "urbanairship-cordova": "6.6.0",
+        "cordova-plugin-whitelist": "1.3.2",
+        "cordova-plugin-statusbar": "2.2.3"
+    }
+}

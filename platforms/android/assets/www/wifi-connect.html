@@ -1,0 +1,330 @@
+
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html lang="en">
+  <head>
+	 <script src='assets/jquery.min.js'></script><meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    <title>SOAR 2017</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/material.css">
+    <link rel="stylesheet" href="assets/styles.css">
+	  <style>
+	  @font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url(assets/material-font.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+          .headerbar {
+              border-bottom:  thick solid #15397F;
+              padding-left: 0px;
+              text-transform: uppercase;
+              padding-top: 25px;
+          }
+	  </style>
+  </head>
+    
+    
+  <body>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header
+            mdl-layout--scroll-tabs">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Connect Wi-Fi</span>
+    </div>
+    <!-- Tabs -->
+    <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+        <a href="#overview" class="mdl-layout__tab is-active">Overview</a>
+      <a href="#greenman" class="mdl-layout__tab">&#913;ndroid</a>
+      <a href="#ios" class="mdl-layout__tab" style="text-transform: none;">iOS</a>
+        <a href="#mac" class="mdl-layout__tab">Mac</a>
+        <a href="#win7" class="mdl-layout__tab ">Windows 7</a>
+      <a href="#win8" class="mdl-layout__tab">Windows 8</a>
+        <a href="#win10" class="mdl-layout__tab">Windows 10</a>
+    </div>
+  </header>
+      <div class="drawer mdl-layout__drawer mdl-color--grey-900 mdl-color-text--grey-50">
+        <header class="drawer-header">
+          <div class="avatar-dropdown">
+            <span>SOAR 2017</span>
+            <div class="mdl-layout-spacer"></div>
+          </div>
+        </header>
+  
+<nav id="main-nav" class="navigation mdl-navigation mdl-color--grey-800">
+          <a class="mdl-navigation__link" href="index.html"><i class="mdl-color-text--grey-400 material-icons" role="presentation">home</i>Home</a>
+          <a class="mdl-navigation__link" href="schedule.html"><i class="mdl-color-text--grey-400 material-icons" role="presentation">event_note</i>Schedule</a>
+          <a class="mdl-navigation__link" href="faq.html"><i class="mdl-color-text--grey-400 material-icons" role="presentation">help</i>FAQ</a>
+          <a class="mdl-navigation__link" href="leaders.html"><i class="mdl-color-text--grey-400 material-icons" role="presentation">wc</i>SOAR Leaders</a>
+          <a class="mdl-navigation__link" href="photos.html"><i class="mdl-color-text--grey-400 material-icons" role="presentation">add_a_photo</i>Share Photos</a>
+          <a class="mdl-navigation__link" href="links.html"><i class="mdl-color-text--grey-400 material-icons" role="presentation">flag</i>Informative Links</a>
+          <a class="mdl-navigation__link" href="survey.html"><i class="mdl-color-text--grey-400 material-icons" role="presentation">poll</i>Survey</a>
+            <a class="mdl-navigation__link" href="map.html"><i class="mdl-color-text--grey-400 material-icons" role="presentation">map</i>Campus Map</a>
+                       <div id="deviceready" class="blink" style="padding-top:20%;">
+<!--REMOVE IN RELEASE -->
+            
+                           
+                           <!-- END REMOVE IN RELEASE -->
+                           
+                <p class="event received mdl-color-text--grey-800"></p>
+            </div>
+          
+        </nav>
+
+      </div>
+      <main class="mdl-layout__content mdl-color--grey-100">
+    <section class="mdl-layout__tab-panel is-active" id="overview">
+      <div class="page-content" style="padding: 0px 20px 10px 30px;">
+            <h2>Wi-Fi Networks</h2>
+<hr class="thick">
+          
+          
+          
+<p>Berry College has three  different wireless networks available for use on campus. Each of these  networks fulfills a specific purpose.    
+</p>
+          <h4 style="border-left: thick solid #891224; padding-left: 10px"><b><i>Please note: Personally owned WiFi routers are not permitted on campus.</i> </b></h4>
+<h3 class="headerbar">Berry</h3>
+<p>“Berry”  is the secured WiFi network available to students, faculty, and  staff**. Information sent over this network is protected by the highest  levels of encryption. This network also has access to the greatest  amount of bandwidth, making it considerably    faster than the other two
+     networks.<b> Students, faculty, and staff should use this network</b>. Please scroll down for instructions for your particular device.    
+
+</p>
+<p>**Access  to this network requires your Active Directory credentials. Your Active  Directory username is the first part of your email address. (For  example, if your email address is vviking@berry.edu (for faculty/staff) or  victor.viking@vikings.berry.edu (for students), your Active Directory username is 
+    vviking or victor.viking, respectively.) These credentials are used for  campus WiFi, campus computer login, and campus printing. You can reset  your Active Directory password at    
+    <a title="react.berry.edu" target="_blank" href="http://react.berry.edu">react.berry.edu</a>.    
+
+</p>
+<h3 class="headerbar">BerryGuest</h3>
+<p>BerryGuest  is an open network available to guests of the college. BerryGuest has  no authentication or encryption, so information sent over this network  is not as protected as information sent over “Berry” or wired Ethernet  connections. <b>Students, faculty, staff should use “Berry” instead of "BerryGuest”.</b>     
+
+</p>
+<h3 class="headerbar">BerryEZconnect</h3>
+<p>"BerryEZConnect" is designed for devices that need wireless internet access but don’t  support the encryption required by the “Berry” network. Some examples of  devices that can connect to this network include Microsoft Xbox, Sony  Playstation, and Apple TV    systems. Please email your full name and Berry ID number to&nbsp;<a href="mailto:computing@berry.edu" title="computing@berry.edu">computing@berry.edu</a>&nbsp;and note that you are requesting to add one of these devices to the network. We will generate a password and send it to your Berry College email account.&nbsp; It will allow you to connect up to five devices to the "BerryEZConnect" wireless network.</p><p><span>If your particular device cannot 
+    connect to this network or “Berry," please contact the Technical Support Desk at  <a href="tel:706-238-5838">706-238-5838</a> or    
+          </span><a href="mailto:computing@berry.edu">computing@berry.edu</a> for support.</p>
+            
+        </div>
+    </section>
+          
+              <section class="mdl-layout__tab-panel" id="greenman">
+      <div class="page-content" style="padding: 0px 20px 10px 0px;">
+
+          <ol><h5>
+    <li>Go to Settings and select Wi-Fi. 
+        <br/><img src="img/wifi/greenman/step1.png" style="padding:10px;" width="75%">
+              </li><br/>
+    <li>Make sure Wi-Fi is on, and select “Berry” from the list of available networks.
+<br/><img src="img/wifi/greenman/step2.png" style="padding:10px;" width="75%"></li><br/>
+    <li>Select “MSCHAPv2” from the “Phase 2 Authentication” dropdown menu
+<br/><img src="img/wifi/greenman/step3.png" style="padding:10px;" width="75%"></li><br/>
+    <li>Type in your Active Directory username into the “Identity” and your AD password into the “password” field. Leave “Anonymous Identity” clear, and ensure that “EAP method” is set to PEAP. Do not change any other fields, and select “CONNECT”
+		<br/><img src="img/wifi/greenman/step4.png" style="padding:10px;" width="75%"></li><br/><li> “Berry” should read as “Connected” after a few seconds.<br/><img src="img/wifi/greenman/step5.png" style="padding:10px;" width="75%"></li>
+          </h5></ol>
+        </div>
+    </section>
+          
+    <section class="mdl-layout__tab-panel" id="ios">
+      <div class="page-content" style="padding: 0px 20px 10px 0px;">
+             <ol><h5>
+              
+    <li> Go to Settings and select Wi-Fi.<br/>
+        <img src="img/wifi/ios/step1.png" style="padding:10px;" width="75%"></li><br>
+                 
+                 <li> Select "Berry"<br/>
+        <img src="img/wifi/ios/step2.png" style="padding:10px;" width="75%"></li><br>
+                 
+                 <li> Enter your Active Directory username and password<br/>
+        <img src="img/wifi/ios/step3.png" style="padding:10px;" width="75%"></li><br>
+                 
+                 <li> Select "Join"<br/>
+        <img src="img/wifi/ios/step4.png" style="padding:10px;" width="75%"></li><br>
+                 
+                 <li> Select "trust"<br/>
+        <img src="img/wifi/ios/step5.png" style="padding:10px;" width="75%"></li><br>
+                 
+                 <li> If successful, "Berry" will have a checkmark next to it<br/>
+        <img src="img/wifi/ios/step6.png" style="padding:10px;" width="75%"></li><br>
+                 
+        
+                 
+          </h5></ol>
+
+        </div>
+          
+          
+    </section>
+              <section class="mdl-layout__tab-panel" id="win7">
+      <div class="page-content" style="padding: 0px 20px 10px 0px;">
+              
+         <ol><h5>
+    <li>Click Start 
+        <br/><img src="img/wifi/win7/step1.png" style="padding:10px;" width="100%">
+              </li><br/>
+    <li>Navigate to "Control Panel"
+<br/><img src="img/wifi/win7/step2.png" style="padding:10px;" width="100%"></li><br/>
+    <li>Click "Network and Internet"
+<br/><img src="img/wifi/win7/step3.png" style="padding:10px;" width="100%"></li><br/>
+    <li>Click “Network and Sharing Center”
+		<br/><img src="img/wifi/win7/step4.png" style="padding:10px;" width="100%"></li><br/><li>Click “Manage Wireless Networks"<br/><img src="img/wifi/win7/step5.png" style="padding:10px;" width="75%"></li>
+<li>If you already have a network named “Berry”, select it and click “Remove”. After that, click “Add”<br/><img src="img/wifi/win7/step6.png" style="padding:10px;" width="100%"></li>
+<li> Select “Manually Create a Network Profile”
+<br/><img src="img/wifi/win7/step7.png" style="padding:10px;" width="100%"></li>
+<li>Set the name blank to “Berry” and select “WPA2 Enterprise” from the dropdown menu. Do not change any other
+fields.
+<br/><img src="img/wifi/win7/step8.png" style="padding:10px;" width="100%"></li>
+<li>Select “Change connection settings."
+<br/><img src="img/wifi/win7/step9.png" style="padding:10px;" width="100%"></li>
+<li>Select the “Security” tab.
+<br/><img src="img/wifi/win7/step10.png" style="padding:10px;" width="100%"></li>
+
+			 <li>Select the “Settings” button.
+<br/><img src="img/wifi/win7/step11.png" style="padding:10px;" width="100%"></li>
+
+			 <li>Clear the “Validate Server Certificate” checkbox (Make sure that it is <u>unchecked</u>)
+<br/><img src="img/wifi/win7/step12.png" style="padding:10px;" width="100%"></li>
+
+			 <li>Click the “Configure” button.
+<br/><img src="img/wifi/win7/step13.png" style="padding:10px;" width="100%"></li>
+
+			 <li>Ensure that the checkbox that pops up is <u>unchecked</u> and then click OK.
+<br/><img src="img/wifi/win7/step14.png" style="padding:10px;" width="100%"></li>
+
+			 <li>Click “Advanced Settings”
+<br/><img src="img/wifi/win7/step15.png" style="padding:10px;" width="100%"></li>
+
+			 <li>Make sure the checkbox is <u>checked</u> and then select “User or Computer Authentication” from the dropdown menu.
+Click the “Save Credentials” button.
+<br/><img src="img/wifi/win7/step16.png" style="padding:10px;" width="100%"></li>
+
+			 <li>Enter your Active Directory Username and password. Click okay, then click “OK” or “Close” on all the remaining
+				 windows. You should be connected now! Please call the Help Desk at <a href="tel:706-238-5838"> 706-238-5838</a> if you have trouble.
+<br/><img src="img/wifi/win7/step17.png" style="padding:10px;" width="100%"></li>
+
+	
+          </h5></ol>
+
+        </div> 
+          
+          
+          
+          
+    </section>
+                        <section class="mdl-layout__tab-panel" id="win10">
+      <div class="page-content" style="padding: 0px 20px 10px 0px;">
+              
+     <ol><h5>
+    <li>Locate your Network icon in the bottom right of your screen.
+        <br/><img src="img/wifi/win10/step1.png" style="padding:10px;" width="100%">
+              </li><br/>
+    <li>Make sure wifi is turned on and airplane mode is turned off (blue box), then select the
+wifi network “Berry.”
+<br/><img src="img/wifi/win10/step2.png" style="padding:10px;" width="100%"></li><br/>
+    <li>Once selected, make sure to have “Connect Automatically” checked and click “Connect”
+<br/><img src="img/wifi/win10/step3.png" style="padding:10px;" width="100%"></li><br/>
+		 
+	<li>Enter in your AD credentials (The username is the first part of your email before the @)<br/><img src="img/wifi/win10/step3.png" style="padding:10px;" width="100%"></li><br/>
+		 	<li>A notification will appear, click “Connect”<br/><img src="img/wifi/win10/step4.png" style="padding:10px;" width="100%"></li><br/>
+		 <li>You are now connected to secure Berry Wireless.<br/><img src="img/wifi/win10/step5.png" style="padding:10px;" width="100%"></li><br/>
+          </h5></ol>
+
+        </div> 
+          
+          
+          
+          
+    </section>
+                        <section class="mdl-layout__tab-panel" id="win8">
+      <div class="page-content" style="padding: 0px 20px 10px 0px;">
+              
+     <ol><h5>
+    <li>In Tile mode, hover on the right hand side of the screen and select Settings (the gear) and the network icon.
+        <br/><img src="img/wifi/win8/step1.png" style="padding:10px;" width="100%">
+              </li><br/>
+    <li>Select the “Berry” network and choose connect automatically.
+<br/><img src="img/wifi/win8/step2.png" style="padding:10px;" width="100%"></li><br/>
+    <li>Sign in using your active directory credentials and click OK. Verify that you are “connected.”
+<br/><img src="img/wifi/win8/step3.png" style="padding:10px;" width="100%"></li><br/>
+         
+             <li>You should now be connected!
+<br/><img src="img/wifi/win8/step4.png" style="padding:10px;" width="100%"></li><br/>
+          </h5></ol>
+
+        </div> 
+          
+          
+          
+          
+    </section>
+                        <section class="mdl-layout__tab-panel" id="mac">
+      <div class="page-content" style="padding: 0px 20px 10px 0px;">
+              
+          <ol><h5>
+    <li>Click on the Wi-Fi icon in the top bar, and select "Berry" from the list of avalible networks.
+        <br/><img src="img/wifi/mac/step1.png" style="padding:10px;" width="100%">
+              </li><br/>
+    <li>Enter your Active Directory information, (Firstname.Lastname), and click "Join"
+<br/><img src="img/wifi/mac/step2.png" style="padding:10px;" width="100%"></li><br/>
+    <li>If you get a pop up that says “Verify Certificate,” click "Show Certificate."
+<br/><img src="img/wifi/mac/step3.png" style="padding:10px;" width="100%"></li><br/>
+    <li>Make sure “Always trust...” is checked and enter your computer's username and password.
+<br/><img src="img/wifi/mac/step4.png" style="padding:10px;" width="100%">
+			  </li><br/>
+          </h5></ol>
+
+        </div> 
+          
+          
+          
+          
+    </section>
+
+     </main>
+    </div>
+
+    <script src="nav.js"></script><script src="assets/material.js"></script>
+	<script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+  </body>
+</html>

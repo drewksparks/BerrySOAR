@@ -1,0 +1,5 @@
+XSym
+0058
+4c8752405e275967d987be9ba858fea3
+../../../UrbanAirship-iOS-SDK/Airship/Inbox/UAInboxUtils.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     

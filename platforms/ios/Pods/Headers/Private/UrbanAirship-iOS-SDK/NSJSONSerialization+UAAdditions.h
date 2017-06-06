@@ -1,0 +1,5 @@
+XSym
+0078
+53396d37c73bae3db74602196cc9173f
+../../../UrbanAirship-iOS-SDK/Airship/Common/NSJSONSerialization+UAAdditions.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 

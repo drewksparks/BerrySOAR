@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.berry.soar" version="2.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Berry SOAR</name>
+    <description>
+        Your orientation guide to Berry College
+    </description>
+    <author email="webmanager@berry.edu" href="http://www.berry.edu">
+        Berry College Digital Marketing
+    </author>
+
+
+    <content src="index.html" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <allow-navigation href="http://www.berry.edu/*" />
+    <allow-navigation href="https://www.berry.edu/*" />
+    <allow-navigation href="*" />
+    <access origin="*" />
+    <access origin="http://berry.edu" subdomains="true" />
+    <access origin="https://berry.edu" subdomains="true" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="http://www.berry.edu/*" />
+    <allow-intent href="https://www.berry.edu/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <!--
+        <icon qualifier="ldpi" src="www/res/icons/android/icon-36-ldpi.png"/>
+        <icon qualifier="mdpi" src="www/res/icons/android/icon-48-mdpi.png"/>
+        <icon qualifier="hdpi" src="www/res/icons/android/icon-72-hdpi.png"/>
+        <icon qualifier="xhdpi" src="www/res/icons/android/icon-96-xhdpi.png"/>
+<icon qualifier="xxxhdpi" src="www/res/icons/android/icon-192-xxxhdpi.png"/>
+-->
+        <icon src="www/res/icons/android/icon-144-xxhdpi.png"/>
+        
+        <splash qualifier="ldpi" src="www/res/screens/android/screen-ldpi-portrait.png"/>
+<splash qualifier="mdpi" src="www/res/screens/android/screen-mdpi-portrait.png"/>
+<splash qualifier="hdpi" src="www/res/screens/android/screen-hdpi-portrait.png"/>
+<splash qualifier="xhdpi" src="www/res/screens/android/screen-xhdpi-portrait.png"/>
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <icon src="www/res/icons/ios/icon-small.png" width="29" height="29"/>
+        <icon src="www/res/icons/ios/icon-small-2x.png" width="58" height="58"/>
+        <icon src="www/res/icons/ios/icon-40.png" width="40" height="40"/>
+        <icon src="www/res/icons/ios/icon-40-2x.png" width="80" height="80"/>
+        <icon src="www/res/icons/ios/icon-50.png" width="50" height="50"/>
+        <icon src="www/res/icons/ios/icon-50-2x.png" width="100" height="100"/>
+        <icon src="www/res/icons/ios/icon.png" width="57" height="57"/>
+        <icon src="www/res/icons/ios/icon-2x.png" width="114" height="114"/>
+        <icon src="www/res/icons/ios/icon-60.png" width="60" height="60"/>
+        <icon src="www/res/icons/ios/icon-60-2x.png" width="120" height="120"/>
+        <icon src="www/res/icons/ios/icon-60-3x.png" width="180" height="180"/>
+        <icon src="www/res/icons/ios/icon-72.png" width="72" height="72"/>
+        <icon src="www/res/icons/ios/icon-72-2x.png" width="144" height="144"/>
+        <icon src="www/res/icons/ios/icon-76.png" width="76" height="76"/>
+        <icon src="www/res/icons/ios/icon-76-2x.png" width="152" height="152"/>
+        <splash src="www/res/screens/ios/screen-iphone-portrait.png" width="320" height="480"/>
+<splash src="www/res/screens/ios/screen-iphone-portrait-2x.png" width="640" height="960"/>
+<splash src="www/res/screens/ios/screen-iphone-portrait-568h-2x.png" width="640" height="1136"/>
+<splash src="www/res/screens/ios/screen-iphone-portrait-667h.png" width="750" height="1334"/>
+<splash src="www/res/screens/ios/screen-iphone-portrait-736h.png" width="1242" height="2208"/>
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+        <allow-intent href="instagram:*" />
+    </platform>
+    
+        <!-- Customize your app and platform with the preference element. -->
+    <preference name="orientation"                value="portrait" />        <!-- all: default means both landscape and portrait are enabled -->
+    <preference name="target-device"              value="handset" />      <!-- all: possible values handset, tablet, or universal -->
+    <preference name="fullscreen"                 value="false" />           <!-- all: hides the status bar at the top of the screen -->
+    <preference name="webviewbounce"              value="false" />           <!-- ios: control whether the screen 'bounces' when scrolled beyond the top -->
+    <preference name="prerendered-icon"           value="true" />           <!-- ios: if icon is prerendered, iOS will not apply it's gloss to the app's icon on the user's home screen -->
+    <preference name="stay-in-webview"            value="false" />          <!-- ios: external links should open in the default browser, 'true' would use the webview the app lives in -->
+    <preference name="ios-statusbarstyle"         value="black-opaque" />   <!-- ios: black-translucent will appear black because the PhoneGap webview doesn't go beneath the status bar -->
+    <preference name="detect-data-types"          value="true" />           <!-- ios: controls whether data types (such as phone no. and dates) are automatically turned into links by the system -->
+    <preference name="exit-on-suspend"            value="false" />          <!-- ios: if set to true, app will terminate when home button is pressed -->
+    <preference name="show-splash-screen-spinner" value="false" />           <!-- ios: if set to false, the spinner won't appear on the splash screen during app loading -->
+    <preference name="auto-hide-splash-screen"    value="true" />           <!-- ios: if set to false, the splash screen must be hidden using a JavaScript API -->
+        <!-- Urban Airship app credentials -->
+<preference name="com.urbanairship.production_app_key" value="0KdzCNtvTJmHMUHMatLB5A" />
+<preference name="com.urbanairship.production_app_secret" value="X7UWJmgKTfid6MpUzxlkjg" />
+    <preference name="com.urbanairship.development_app_key" value="WdzOtyWBSpaisDRtbesKsA" />
+<preference name="com.urbanairship.development_app_secret" value="-jtzuQyaQd-KpgkcNYMx5g" />
+
+<!-- Required for Android. -->
+<preference name="com.urbanairship.gcm_sender" value="909486533514" />
+
+<!-- If the app is in production or not -->
+<preference name="com.urbanairship.in_production" value="true" />
+
+<!-- Optional config values -->
+
+<!-- Enable push when the application launches -->
+<preference name="com.urbanairship.enable_push_onlaunch" value="true" />
+
+<!-- Enable Analytics when the application launches -->
+<!-- Warning: Features that depend on analytics being enabled may not work properly if analytics is disabled (reports, location segmentation, region triggers, push to local time). -->
+<preference name="com.urbanairship.enable_analytics" value="true" />
+
+<!-- Urban Airship development log level defaults to debug -->
+<preference name="com.urbanairship.development_log_level" value="debug" />
+
+<!-- Urban Airship production log level defaults to error -->
+<preference name="com.urbanairship.production_log_level" value="error" />
+
+<!-- Override the Android notification icon -->
+<preference name="com.urbanairship.notification_icon" value="ic_notification" />
+
+<!-- Override the Android notification sound (sound file should be in res/raw)-->
+<preference name="com.urbanairship.notification_sound" value="push" />
+
+<!-- Specify the notification accent color for Android API 21+ (Lollipop) -->
+<preference name="com.urbanairship.notification_accent_color" value="#15397f" />
+
+<!-- Clear the iOS badge on launch -->
+<preference name="com.urbanairship.clear_badge_onlaunch" value="true" />
+
+<!-- iOS 10 alert foreground notification presentation option -->
+<preference name="com.urbanairship.ios_foreground_notification_presentation_alert" value="true"/>
+
+<!-- iOS 10 badge foreground notification presentation option -->
+<preference name="com.urbanairship.ios_foreground_notification_presentation_badge" value="true"/>
+
+<!-- iOS 10 sound foreground notification presentation option -->
+<preference name="com.urbanairship.ios_foreground_notification_presentation_sound" value="true"/>
+    
+<!-- Status bar stuffs-->
+    <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="StatusBarBackgroundColor" value="#15397F" />
+    <preference name="StatusBarStyle" value="lightcontent" />
+    
+</widget>

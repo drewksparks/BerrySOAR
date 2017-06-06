@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.urbanairship.richpush" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+
+<!-- Urban Airship app credentials -->
+<preference name="com.urbanairship.production_app_key" value="Hx7SIqHqQDmFj6aruaAFcQ" />
+<preference name="com.urbanairship.production_app_secret" value="3-5cLPw3TS-t9M6lb22kUA" />
+<preference name="com.urbanairship.development_app_key" value="Hx7SIqHqQDmFj6aruaAFcQ" />
+<preference name="com.urbanairship.development_app_secret" value="3-5cLPw3TS-t9M6lb22kUA" />
+<!-- Required for Android. -->
+<preference name="com.urbanairship.gcm_sender" value="gcmSenderValue" />
+<!-- If the app is in production or not -->
+<preference name="com.urbanairship.in_production" value="false" />
+<!-- Optional config values -->
+<!-- Enable push when the application launches -->
+<preference name="com.urbanairship.enable_push_onlaunch" value="true" />
+<!-- Enable Analytics when the application launches -->
+<!-- Warning: Features that depend on analytics being enabled may not work properly if analytics is disabled (reports, location segmentation, region triggers, push to local time). -->
+<preference name="com.urbanairship.enable_analytics" value="true" />
+<!-- Override the Android notification icon -->
+<preference name="com.urbanairship.notification_icon" value="ic_notification" />
+<!-- Specify the notification accent color for Android API 21+ (Lollipop) -->
+<preference name="com.urbanairship.notification_accent_color" value="#0000ff" />
+<!-- Clear the iOS badge on launch -->
+<preference name="com.urbanairship.clear_badge_onlaunch" value="true" />
+    <feature name="LocalStorage">
+        <param name="ios-package" value="CDVLocalStorage" />
+    </feature>
+    <feature name="HandleOpenUrl">
+        <param name="ios-package" value="CDVHandleOpenURL" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="IntentAndNavigationFilter">
+        <param name="ios-package" value="CDVIntentAndNavigationFilter" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="GestureHandler">
+        <param name="ios-package" value="CDVGestureHandler" />
+        <param name="onload" value="true" />
+    </feature>
+    <name>Test</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="itms:*" />
+    <allow-intent href="itms-apps:*" />
+    <preference name="AllowInlineMediaPlayback" value="false" />
+    <preference name="BackupWebStorage" value="cloud" />
+    <preference name="DisallowOverscroll" value="false" />
+    <preference name="EnableViewportScale" value="false" />
+    <preference name="KeyboardDisplayRequiresUserAction" value="true" />
+    <preference name="MediaPlaybackRequiresUserAction" value="false" />
+    <preference name="SuppressesIncrementalRendering" value="false" />
+    <preference name="SuppressesLongPressGesture" value="false" />
+    <preference name="Suppresses3DTouchGesture" value="false" />
+    <preference name="GapBetweenPages" value="0" />
+    <preference name="PageLength" value="0" />
+    <preference name="PaginationBreakingMode" value="page" />
+    <preference name="PaginationMode" value="unpaginated" />
+    <feature name="UAirship">
+        <param name="ios-package" value="UAirshipPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+</widget>
+
+

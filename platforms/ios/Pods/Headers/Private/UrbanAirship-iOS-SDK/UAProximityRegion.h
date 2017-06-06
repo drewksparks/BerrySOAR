@@ -1,0 +1,5 @@
+XSym
+0064
+6c23bfd613e8c20ee3437c5359ed04ad
+../../../UrbanAirship-iOS-SDK/Airship/Common/UAProximityRegion.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               

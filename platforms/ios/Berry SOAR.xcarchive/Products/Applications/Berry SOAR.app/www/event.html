@@ -1,0 +1,62 @@
+<html>
+<head>
+<style type="text/css">
+#openSign.OPEN {
+    color: green;
+    background-color: yellow;
+    font-size: x-large;
+}
+#openSign.CLOSED {
+    color : red;
+    background-color: pink;
+    font-size: large;
+}
+</style>
+    <script type="text/javascript">
+var dateFrom = "04/05/2017";
+var dateTo = "05/09/2017";
+
+
+var d1 = dateFrom.split("/");
+var d2 = dateTo.split("/");
+
+
+var from = new Date(d1[2], parseInt(d1[1])-1, d1[0]);  // -1 because months are from 0 to 11
+var to   = new Date(d2[2], parseInt(d2[1])-1, d2[0]);
+var check = getDate();
+
+console.log(check > from && check < to)
+    </script>
+<script type="text/javascript">
+
+var OPENAT = 7.5; // 7:30 AM ... change as appropriate - can be fractions of an hour e.g. 7.5 = 7:30am
+var CLOSEAT = 21; // 9:00 PM ... change as appropriate
+
+function areWeOpen( ) {
+var sign = document.getElementById("openSign");
+var day = new Date().getDay();
+var hour = new Date().getHours();
+var mins = new Date().getMinutes();
+hour = hour + mins/60;
+if ( day >=1 && day <=5 && hour >= OPENAT && hour < CLOSEAT )  {
+sign.innerHTML = "We are now OPEN";
+sign.className = "OPEN";
+} 
+else {
+sign.innerHTML = "Sorry, we are now CLOSED";
+sign.className = "CLOSED";
+}
+}
+</script>
+</head>
+
+<body onload = "areWeOpen()">
+<center>
+<h2>Welcome to our Store</h2>
+<br/>
+<h3 id="openSign"></h3>
+<br/>
+</center>
+... rest of page ...
+</body>
+</html>

@@ -1,0 +1,5 @@
+XSym
+0055
+a4864ca50510d499cbeeec28fbbfe49d
+../../../UrbanAirship-iOS-SDK/Airship/Common/UAGlobal.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        

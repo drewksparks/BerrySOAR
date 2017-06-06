@@ -1,0 +1,918 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0045EAAEDC844992CB8D0F0137E910BC /* UADefaultMessageCenterSplitViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C546B5AF52AD4D39E594D9D8F754C71B /* UADefaultMessageCenterSplitViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0268F30C676AA6DF1CCCB94D1A881667 /* UAWebViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F8B0BDB04B300135F87D10C42DD6A2E /* UAWebViewDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02AB43C48A3202D3EA06411D64372511 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DF78719F7C93A9D2F66B919C5C88522 /* UserNotifications.framework */; };
+		0533AABC72B4FE63F773B753D33678CA /* UADefaultMessageCenterMessageViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BE9BDC3B04A7B78AF6AC7B278533B7B7 /* UADefaultMessageCenterMessageViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05B20DC24B315D0129EB96B52B8B9FB0 /* UAActivityViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AAF51C850B84CB7D6F9DFBB7FDD5931 /* UAActivityViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A4C627169D67556B56B169D9305C3DB /* UA_Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = A77DE87BD4FB2D756AAF87174BA9F1FF /* UA_Base64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CBA7154C94D481438F63E30989E0B6D /* UAUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = D8FE04484043498F4E9E658FB15ECC4B /* UAUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F5F2B5ED564C2394310E7F81AF04306 /* UADefaultMessageCenterListCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A4DD4550F443F7E4A1C959F9EA17F4B /* UADefaultMessageCenterListCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		216D7763A5492B3C0F54B66010C27FB2 /* UANotificationAction.h in Headers */ = {isa = PBXBuildFile; fileRef = DA30C1371049BF4B302267870A497BC8 /* UANotificationAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22B3A3BB4C06E817D666FF4DBFE6660B /* NSString+UALocalizationAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D0CB4AA07D963C6D1F7B5D94780BD03 /* NSString+UALocalizationAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27164B213D7C59260C1BEA38B4C7066E /* UAInboxUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C46C9277FFFB4CFCFB7EA2F04A38A4F /* UAInboxUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		281F60CD370F3A2516ED257EB663C9B3 /* UAGlobal.h in Headers */ = {isa = PBXBuildFile; fileRef = B3A8205532F07A239DB63EFE27B404B9 /* UAGlobal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		282391B4ABC20CD83403777F03E32363 /* UABeveledLoadingIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = 54409CBA502DCF319D2F686E156C5334 /* UABeveledLoadingIndicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28A2F9A1F4E89F69CBFC0DB320999F03 /* UAMessageCenterLocalization.h in Headers */ = {isa = PBXBuildFile; fileRef = 71068F354FC5FFC4F25776AB41EFA33A /* UAMessageCenterLocalization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D25FADA8F59B949EF0DC96BB3BE926F /* UAInAppMessageButtonActionBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CC80A4C107CB5E8396CB4ACF238722E /* UAInAppMessageButtonActionBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30ACBA9C9DC36B5FB1F244571CAF95D0 /* UANotificationContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 16A575ECC53EAAFF5A405D276758E4D9 /* UANotificationContent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		330968D5910F84143A8C571CC936C14E /* UAUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 63806B44BEE128A5BAA2E07EB4D97943 /* UAUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34E25060DE5E8573FD7B843753B1934B /* UAOverlayInboxMessageAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C26379F674AF8DAADCF8242A5A74F8D /* UAOverlayInboxMessageAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3513B76C7745F2838E824F33CFF70D98 /* UALocationEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = FF491429E0EACD64227C4D379B0D4C2A /* UALocationEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		353FFF013D7D87DC749F004122583D13 /* UALandingPageOverlayController.h in Headers */ = {isa = PBXBuildFile; fileRef = 111F6F770AEAFC02CE43C27D276CEDA2 /* UALandingPageOverlayController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36773BE880E3BB6D213404E625016C1F /* NSJSONSerialization+UAAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 92E8315C0B2EE44D610CE6DB6D824BAD /* NSJSONSerialization+UAAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36C76CFD082C4BD445722D493DF1C75F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD852563A62D94A05828F8BB907C5BE4 /* Foundation.framework */; };
+		38A50F1BF814395ACA67E5DB11D0FD2A /* UAActionResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 9173FAE68CEFF43480BF119B89F445BB /* UAActionResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BDC8ECFF900D06CE1FD3E4567C2FE4D /* UAScheduleAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B6A005EDFA058108FBE589B4B29E1CD /* UAScheduleAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F7347F06082E7212F3AB4B4BB6FBF0A /* UAInboxMessageList.h in Headers */ = {isa = PBXBuildFile; fileRef = D3E2B9446EFD85C06B00E7500EBBCF04 /* UAInboxMessageList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42248250991EB0CA2E05D45C6B687A61 /* NSString+UAURLEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F29EC1A2D7CA60FA22F038E9DA1D09 /* NSString+UAURLEncoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43D4873BF270026DA9EA4CDC9187457F /* UANotificationResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = B662326C6CBF2D74B762A8062806CE0A /* UANotificationResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		450CC08AD490EE88FEBE8FF5E20BA0AB /* UAInAppMessageControllerDefaultDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EAB4352E7742687FC30E08B992271CD /* UAInAppMessageControllerDefaultDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45CD5B57FD2BAC904F4E0CF1360D8EB8 /* UAInAppMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 953D5720DE449BD27F5149B8C6D06346 /* UAInAppMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45E1F0AFA4718E4341ABC1691B6A866F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F176ADCA036E051D3965BFD1BC386AC /* UIKit.framework */; };
+		461AEDCF4245F2C7568C943180FFDF70 /* UAActionArguments.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC4F13B34C011AC177B6988C5C6BF69 /* UAActionArguments.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		462611546B7389855A1022127364BD2F /* UAAction.h in Headers */ = {isa = PBXBuildFile; fileRef = FEF0FF6CB3178EDC3368C5BE2D108BD1 /* UAAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		496D6E2C99A0DF945F9FC808157DE6C1 /* UALandingPageAction.h in Headers */ = {isa = PBXBuildFile; fileRef = DCAFD52B2972C84559BB8594EA95D630 /* UALandingPageAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C80938B803C0C002CD842833B7D3D8A /* UAShareAction.h in Headers */ = {isa = PBXBuildFile; fileRef = F758A1C69C6C49093A3A0B0DF3A5ED9F /* UAShareAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		527335E8DC647286D9D4FD34DD329BAA /* UADisposable.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FCE51F5BA1450B3D41862F5AFA46E65 /* UADisposable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		53EE1F067D130E5AF5F1AA3929337B99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD852563A62D94A05828F8BB907C5BE4 /* Foundation.framework */; };
+		54701DA4F5EBFABE1B4504728D833BBF /* UAirship.h in Headers */ = {isa = PBXBuildFile; fileRef = F964729950568ED59DA2A9E24FB87D8E /* UAirship.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5500770BB0CBF3DB0709BBB9196DBE6F /* UAScheduleTrigger.h in Headers */ = {isa = PBXBuildFile; fileRef = 37B49A494B5FDF6EB4404497ED89BF8E /* UAScheduleTrigger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55EE9CA7CFE0BE9292C02FE3C907606B /* UAWebViewCallData.h in Headers */ = {isa = PBXBuildFile; fileRef = 23741DD40932167C230F17DE3893CD6B /* UAWebViewCallData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		583F27C8AF3F26A38870FD3187D499F6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C097FBB56491BA7702C4E1E068E9B47E /* CoreData.framework */; };
+		59CA23FA33DABF1369773D6B7C20D1F0 /* UAChannelRegistrar.h in Headers */ = {isa = PBXBuildFile; fileRef = 67AF5727FD6A153DC9EE2E88A74D9538 /* UAChannelRegistrar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FAB8C5E20C637AF8176F8A905FADF04 /* UAAddCustomEventAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 9087EAF6212C4BD586DFF3CCA94BD354 /* UAAddCustomEventAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61FA336CFDF61C593870F11A6C8C9C44 /* UAActionRunner.h in Headers */ = {isa = PBXBuildFile; fileRef = 03B6436C9B142CEC66D1E5CD6BEAC834 /* UAActionRunner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6540F641A711C79E8FA2D18E6250CE85 /* UACancelSchedulesAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 639428306BABA0118CDB55DC36AFD123 /* UACancelSchedulesAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68F7A5B39CBB656914ED40D40D7E14FB /* UAURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = D4708AAFFB2BFB5B4850541BB18E10B3 /* UAURLProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A32C5A6A2F23B341F242E757E424CC6 /* UAActionScheduleInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A26B1ABEF8D0414A959B8338457B616 /* UAActionScheduleInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6AE344E050820D28C325598CB123EAC1 /* UrbanAirship-iOS-SDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9620582738C1109F90B133C08385C3 /* UrbanAirship-iOS-SDK-dummy.m */; };
+		6B1C9E808735E024938B0B762C267419 /* UAMessageCenterDateUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 3624928D8E09851EA59C8507F9643596 /* UAMessageCenterDateUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CFE2656F950941F4CD3BA8C17567DFE /* UACircularRegion.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CCB17B66452CF668A6EC1D78F6502AD /* UACircularRegion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DD3D567A7E56F5B5C7964071DD78D62 /* UAJSONValueMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B81B10A9651651B40A7BFBB7FDD7D99 /* UAJSONValueMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6ED5A313056716397601416DD33AED5C /* UANotificationCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CBE7146064DE32CE4E392FEBF1B86B9 /* UANotificationCategories.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F683131DF86F1F3749ED06C600E451E /* UADefaultMessageCenterListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 72CF2D83E332D62B4748D9F9C92B5EE5 /* UADefaultMessageCenterListViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		750CBB2A816003750BD86A35AAB834CB /* UAActionRegistryEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = F4246321A10EF01D42E7CF257A55C5A7 /* UAActionRegistryEntry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75A0ED154FD6C5DCB1E0ADEC2498C6D2 /* UAChannelCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = 99914D2B4648267A422678E71685EDC0 /* UAChannelCapture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7626DBD5F878EC7E5141FD1D57439D91 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B933A317875F757584CEF27B7D272AC /* CoreGraphics.framework */; };
+		7918620CB8BAD277A7D611E2B9933F49 /* UABespokeCloseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8842F5B96D0B91115BC2FF60A586E2A9 /* UABespokeCloseView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7940FC8971E850C9BC837E9C709B83CD /* UAAddTagsAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 34E8CDC4CE87E3C3FD6A01E27851A2B4 /* UAAddTagsAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B745D47C36FC9BFD015B4EAF0AECAA4 /* UAActionSchedule.h in Headers */ = {isa = PBXBuildFile; fileRef = CC2DA7ACAC821DD24FCE338902529F64 /* UAActionSchedule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		836DFC83457519FFF38F1A6B7463CD48 /* UAAppIntegration.h in Headers */ = {isa = PBXBuildFile; fileRef = F96C15A197FFB1CBFDEE63A8A6D593F8 /* UAAppIntegration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83F5C4199D89719C028F688EF470CEBE /* UAAction+Operators.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C01FC443179253D629F79CF67C57618 /* UAAction+Operators.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8440BD55073E5D96DA7E9BA52445B310 /* UARichContentWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 8191B6C735BA91E7CE613E397F3D348F /* UARichContentWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86F5764759F6E07574A8F791240DCA96 /* UADefaultMessageCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = F0AC8BD7A4EAC4415A51DDFEC856468C /* UADefaultMessageCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89426E3E0C33073D94809B8F8F1C53E6 /* UAConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 86825484D62F6E7BB17B7D4883CE2979 /* UAConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A1DBEBED6B02DB8FCED91F3308BFF6C /* UAJavaScriptDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 79C9C1CDA16EFDC5C7EDEA647634F7EA /* UAJavaScriptDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F885E6070BE1598E6158F5FA32EA032 /* UARetailEventTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = C2F3DB8A82D01A263CF5457F25828280 /* UARetailEventTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F906B497AE56C60C6AC2690D2C01CCA /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FDAE4D26A1D8D0A73AE544E986BB32B /* CoreTelephony.framework */; };
+		8FCF78C6F15C368345062970A4AE0D19 /* UATagUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = E67CC45F26DDE80EF4804D4AA5678CCB /* UATagUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9036D6FC8A0A79487C30670122D89A0D /* UAInstallAttributionEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = E31750CEA3D9B497C4BDD5590CBC2E5D /* UAInstallAttributionEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		948EF0E94E84F36AD8318E126561BACB /* AirshipLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 246F532BC41C8AB3506D20CD845DD7C1 /* AirshipLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95784D3112D5EAFAF04A0AE3C5ADF9B1 /* UADisplayInboxAction.h in Headers */ = {isa = PBXBuildFile; fileRef = D90691EBCCBDED41C09F4DB655C5116D /* UADisplayInboxAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98B3B2EE50C0BE5DB4EED7ACFA22AD68 /* UAMediaEventTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = E187CD24EA8CC38CECF659700A381FDB /* UAMediaEventTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A1249BE0936934B10C299DCC97AFD2A /* UACustomEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CBDB5B8AFE5214EAD2DF762902EA562 /* UACustomEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E982E9E7D7BFA879DF5AC7CED2E1B7F /* UAInAppMessaging.h in Headers */ = {isa = PBXBuildFile; fileRef = AA2D772EAC39663F4DDF3226A38BE99B /* UAInAppMessaging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A226A236E41CC90C2F5E523B262F1989 /* UAAggregateActionResult.h in Headers */ = {isa = PBXBuildFile; fileRef = F00BFEB565FB318849F815AF16D6BAB8 /* UAAggregateActionResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A62C187F797520FA3082256CEC2E6E0E /* UAActionJSDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 029A55FD66995975F0CEB6FB0ACD24AB /* UAActionJSDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6C84B29578F004DD4D2ADDF009D59B8 /* UADummySource.m in Sources */ = {isa = PBXBuildFile; fileRef = DEBCDCE34C8D63D595843E030849EBE0 /* UADummySource.m */; };
+		A8F98E28B4AD6BA744E0E07D644F3260 /* UAProximityRegion.h in Headers */ = {isa = PBXBuildFile; fileRef = A3BDA22C44DAD472884D440ECDE472FA /* UAProximityRegion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC9DC319552B2187CC0E0122CEDABC73 /* UADefaultMessageCenterStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 60F0B79EE3FDF47D3D7421C39F86E5CF /* UADefaultMessageCenterStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD166FE668409F308A123B549A249AAE /* UARegionEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 97FB9220BF873079B045127ECBE0F0CC /* UARegionEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD6BFEC7DA1FEAC0E23C57F6FA6F7F18 /* UAJSONMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = D57ABD9AFC83EB99E10021EF71306298 /* UAJSONMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B01BD6B34A3C6B8CC49B5DAABFFC836A /* UAJSONPredicate.h in Headers */ = {isa = PBXBuildFile; fileRef = C4D3B7317C6EBD188070BB5F4440FD1F /* UAJSONPredicate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B06F25274A79394BEFA130244B09B06E /* UAUserAPIClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 386A8B5CFFB6D50930D410A9C37917BE /* UAUserAPIClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0C64C77E31D83BC6AB6DFB8D1F6F416 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABB847463C796524D7ABA8EE47DAE250 /* SystemConfiguration.framework */; };
+		B358453BDA718AF935740EA7A7B69069 /* UANotificationCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F2E8B9C7B622B2A8F9620F36CBFC7A0 /* UANotificationCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3C07CBDFD369A6274E93E503ACBDE55 /* UAOpenExternalURLAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 97FE9196F47E2DC9959363B7BCAE173F /* UAOpenExternalURLAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B874455A03979C875B2CFCA2522699B6 /* UANamedUser.h in Headers */ = {isa = PBXBuildFile; fileRef = AF69D40E45E004E9E71823A77DD3C8C9 /* UANamedUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B97D7FF930E7A7EA4E87E634F614F141 /* UAPush.h in Headers */ = {isa = PBXBuildFile; fileRef = 67F9392B41F4E194335E4F47905770A4 /* UAPush.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB33A8230DDDC505ADCFD070483945C6 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47BA270839CBC2EB8CEDF6A842DE3EF /* CFNetwork.framework */; };
+		BCB308E685C3C91793E8F6F19BAE9769 /* UAInAppMessageControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = E8F0913992165E771CEC67FCE6A1AEB3 /* UAInAppMessageControllerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD56866701DBA24B1E40D0ADDED1CA2D /* UAAccountEventTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EDF114B4BFAFF0F3552BF64BA44A329 /* UAAccountEventTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0AD3E65C28C96C5F62ED97CD44EAA59 /* UARemoveTagsAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 569DA43E06CD3298F60CA7D576D0D642 /* UARemoveTagsAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0B809324EEC223EBDE9B49B4C3F4115 /* UAModifyTagsAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 0868A6954A1F5EB07D30EDC8305B4FD0 /* UAModifyTagsAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C252EA26D32A31F8B8B9F3D0FCCB4774 /* UAEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DA81D659E19A971D5C7A89736B880BC /* UAEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2A08675C61B869B78948E8AE1B3F7A0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFBEEDF5317B296BD909D7FB308DDFB5 /* CoreLocation.framework */; };
+		C3606BA572368A6C56B6FE9C05AFB06F /* UAIncomingInAppMessageAction.h in Headers */ = {isa = PBXBuildFile; fileRef = FAC3765A14CD42DB75C63A09DB83AFF5 /* UAIncomingInAppMessageAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D23426F538772E8A1FCB06712ADF5EC6 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEF4835996A7D19048A9A5C2E1D2CA87 /* MobileCoreServices.framework */; };
+		D3AAED11713DD9ED9F4A0BCBBFE47F36 /* UAInbox.h in Headers */ = {isa = PBXBuildFile; fileRef = 72BEED32DCB325121AFDC0388D6F6B00 /* UAInbox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9BF783747DE8D014C4B2348B7AE02E7 /* UAAnalytics.h in Headers */ = {isa = PBXBuildFile; fileRef = 9757C67468F1400EC31BAA88CB1E2C39 /* UAAnalytics.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA0563C42B794A2FF36C66CC3BBA781B /* UAActionRegistry.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B6F46769CFC6B8D5A1E94BD27DE0747 /* UAActionRegistry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDD6A0298FB036DF9B1ECA48AFF11449 /* UAInboxMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 316978841D529A9CAE677D2BDD543CA6 /* UAInboxMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9A41AD2AF74FC95C249DE792E44E7C6 /* UANativeBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 31E76A69A2158126050F9CD80B4B1D23 /* UANativeBridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED94273D279D9C80C146D98693674521 /* UAApplicationMetrics.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F27D1AA571566199EB161058B62EE73 /* UAApplicationMetrics.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF18CC1E2B15ED3FB09C4E6567147632 /* UIWebView+UAAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D72C453A196D0C42DEE0CCC25F2B27D /* UIWebView+UAAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F49CE81379CF71A1ABA6155D5232761B /* UALocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 63786737AAE18ABD746E5FFCDEDBB6D3 /* UALocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F78E5C07EB3DB8B59A4753EFCE5816AD /* UAAssociatedIdentifiers.h in Headers */ = {isa = PBXBuildFile; fileRef = 01CC250ECC472037BC1B83768B8BACFC /* UAAssociatedIdentifiers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8122E1970461D1E27EE88FCD3236D24 /* UAWhitelist.h in Headers */ = {isa = PBXBuildFile; fileRef = EDC7956EC75BA53D7459A50D2C0CB10E /* UAWhitelist.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8A4CDC5C7A2CE1F6F6162967B16DDB7 /* UAPasteboardAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 423B5CC0AD451BB0D77D275F688A7E1B /* UAPasteboardAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC75AA39AC7ACB35AAC220AD6F253068 /* UAInAppMessageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5987EB25AC90C045282C424FBBB7F7F9 /* UAInAppMessageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FCFBA78C788B594E7FCC1E456FE37F33 /* Pods-Berry SOAR-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B81476FD65BE5DD6B6314F72353FA5F9 /* Pods-Berry SOAR-dummy.m */; };
+		FDD74E655BFF0B3F840B52760E564B98 /* UAAutomation.h in Headers */ = {isa = PBXBuildFile; fileRef = F740D3DC271A142358810E881E7E0E24 /* UAAutomation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE5AA56659076217A9D2B58F6D166CC0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3592112F583B05628619F023B3C35C9 /* Security.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B3731E00535F088F06977395844D8AF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7599BF0DC8F913249BFFA16383130D02;
+			remoteInfo = "UrbanAirship-iOS-SDK";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01CC250ECC472037BC1B83768B8BACFC /* UAAssociatedIdentifiers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAAssociatedIdentifiers.h; path = Airship/Common/UAAssociatedIdentifiers.h; sourceTree = "<group>"; };
+		029A55FD66995975F0CEB6FB0ACD24AB /* UAActionJSDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAActionJSDelegate.h; path = Airship/Common/UAActionJSDelegate.h; sourceTree = "<group>"; };
+		03B6436C9B142CEC66D1E5CD6BEAC834 /* UAActionRunner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAActionRunner.h; path = Airship/Common/UAActionRunner.h; sourceTree = "<group>"; };
+		08129AC6915C11E9EF79AB49587E61D8 /* AirshipResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = AirshipResources.bundle; path = Airship/AirshipResources.bundle; sourceTree = "<group>"; };
+		0868A6954A1F5EB07D30EDC8305B4FD0 /* UAModifyTagsAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAModifyTagsAction.h; path = Airship/Common/UAModifyTagsAction.h; sourceTree = "<group>"; };
+		0972DCF0709E5BCD57FD7E44A913FF65 /* Pods-Berry SOAR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Berry SOAR.release.xcconfig"; sourceTree = "<group>"; };
+		0E79D5FA33C1006AA2CA0443EA9E66A0 /* UrbanAirship-iOS-SDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UrbanAirship-iOS-SDK.xcconfig"; sourceTree = "<group>"; };
+		111F6F770AEAFC02CE43C27D276CEDA2 /* UALandingPageOverlayController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UALandingPageOverlayController.h; path = Airship/Common/UALandingPageOverlayController.h; sourceTree = "<group>"; };
+		1153D3DB5EB38E98D694FAB48D05D909 /* Pods-Berry SOAR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Berry SOAR.debug.xcconfig"; sourceTree = "<group>"; };
+		16A575ECC53EAAFF5A405D276758E4D9 /* UANotificationContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UANotificationContent.h; path = Airship/Push/UANotificationContent.h; sourceTree = "<group>"; };
+		1A26B1ABEF8D0414A959B8338457B616 /* UAActionScheduleInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAActionScheduleInfo.h; path = Airship/Common/UAActionScheduleInfo.h; sourceTree = "<group>"; };
+		1B6F46769CFC6B8D5A1E94BD27DE0747 /* UAActionRegistry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAActionRegistry.h; path = Airship/Common/UAActionRegistry.h; sourceTree = "<group>"; };
+		1EDF114B4BFAFF0F3552BF64BA44A329 /* UAAccountEventTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAAccountEventTemplate.h; path = Airship/Common/UAAccountEventTemplate.h; sourceTree = "<group>"; };
+		1F8B0BDB04B300135F87D10C42DD6A2E /* UAWebViewDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAWebViewDelegate.h; path = Airship/Common/UAWebViewDelegate.h; sourceTree = "<group>"; };
+		23741DD40932167C230F17DE3893CD6B /* UAWebViewCallData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAWebViewCallData.h; path = Airship/Common/UAWebViewCallData.h; sourceTree = "<group>"; };
+		246F532BC41C8AB3506D20CD845DD7C1 /* AirshipLib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AirshipLib.h; path = Airship/AirshipLib.h; sourceTree = "<group>"; };
+		2A4DD4550F443F7E4A1C959F9EA17F4B /* UADefaultMessageCenterListCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UADefaultMessageCenterListCell.h; path = Airship/Common/UADefaultMessageCenterListCell.h; sourceTree = "<group>"; };
+		2DF78719F7C93A9D2F66B919C5C88522 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UserNotifications.framework; sourceTree = DEVELOPER_DIR; };
+		2F176ADCA036E051D3965BFD1BC386AC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		316978841D529A9CAE677D2BDD543CA6 /* UAInboxMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAInboxMessage.h; path = Airship/Inbox/UAInboxMessage.h; sourceTree = "<group>"; };
+		31E76A69A2158126050F9CD80B4B1D23 /* UANativeBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UANativeBridge.h; path = Airship/Common/JS/UANativeBridge.h; sourceTree = "<group>"; };
+		34E8CDC4CE87E3C3FD6A01E27851A2B4 /* UAAddTagsAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAAddTagsAction.h; path = Airship/Common/UAAddTagsAction.h; sourceTree = "<group>"; };
+		3624928D8E09851EA59C8507F9643596 /* UAMessageCenterDateUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAMessageCenterDateUtils.h; path = Airship/Common/UAMessageCenterDateUtils.h; sourceTree = "<group>"; };
+		37B49A494B5FDF6EB4404497ED89BF8E /* UAScheduleTrigger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAScheduleTrigger.h; path = Airship/Common/UAScheduleTrigger.h; sourceTree = "<group>"; };
+		386A8B5CFFB6D50930D410A9C37917BE /* UAUserAPIClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAUserAPIClient.h; path = Airship/Common/UAUserAPIClient.h; sourceTree = "<group>"; };
+		3AAF51C850B84CB7D6F9DFBB7FDD5931 /* UAActivityViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAActivityViewController.h; path = Airship/Common/UAActivityViewController.h; sourceTree = "<group>"; };
+		3B6A005EDFA058108FBE589B4B29E1CD /* UAScheduleAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAScheduleAction.h; path = Airship/Common/UAScheduleAction.h; sourceTree = "<group>"; };
+		3DA81D659E19A971D5C7A89736B880BC /* UAEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAEvent.h; path = Airship/Common/UAEvent.h; sourceTree = "<group>"; };
+		423B5CC0AD451BB0D77D275F688A7E1B /* UAPasteboardAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAPasteboardAction.h; path = Airship/Common/UAPasteboardAction.h; sourceTree = "<group>"; };
+		4CBDB5B8AFE5214EAD2DF762902EA562 /* UACustomEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UACustomEvent.h; path = Airship/Common/UACustomEvent.h; sourceTree = "<group>"; };
+		4CC80A4C107CB5E8396CB4ACF238722E /* UAInAppMessageButtonActionBinding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAInAppMessageButtonActionBinding.h; path = Airship/Common/UAInAppMessageButtonActionBinding.h; sourceTree = "<group>"; };
+		4CCB17B66452CF668A6EC1D78F6502AD /* UACircularRegion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UACircularRegion.h; path = Airship/Common/UACircularRegion.h; sourceTree = "<group>"; };
+		4FCE51F5BA1450B3D41862F5AFA46E65 /* UADisposable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UADisposable.h; path = Airship/Common/UADisposable.h; sourceTree = "<group>"; };
+		54409CBA502DCF319D2F686E156C5334 /* UABeveledLoadingIndicator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UABeveledLoadingIndicator.h; path = Airship/Common/UABeveledLoadingIndicator.h; sourceTree = "<group>"; };
+		569DA43E06CD3298F60CA7D576D0D642 /* UARemoveTagsAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UARemoveTagsAction.h; path = Airship/Common/UARemoveTagsAction.h; sourceTree = "<group>"; };
+		5987EB25AC90C045282C424FBBB7F7F9 /* UAInAppMessageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAInAppMessageView.h; path = Airship/Common/UAInAppMessageView.h; sourceTree = "<group>"; };
+		5C46C9277FFFB4CFCFB7EA2F04A38A4F /* UAInboxUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAInboxUtils.h; path = Airship/Inbox/UAInboxUtils.h; sourceTree = "<group>"; };
+		60F0B79EE3FDF47D3D7421C39F86E5CF /* UADefaultMessageCenterStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UADefaultMessageCenterStyle.h; path = Airship/Common/UADefaultMessageCenterStyle.h; sourceTree = "<group>"; };
+		63786737AAE18ABD746E5FFCDEDBB6D3 /* UALocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UALocation.h; path = Airship/Common/UALocation.h; sourceTree = "<group>"; };
+		63806B44BEE128A5BAA2E07EB4D97943 /* UAUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAUser.h; path = Airship/Common/UAUser.h; sourceTree = "<group>"; };
+		639428306BABA0118CDB55DC36AFD123 /* UACancelSchedulesAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UACancelSchedulesAction.h; path = Airship/Common/UACancelSchedulesAction.h; sourceTree = "<group>"; };
+		67AF5727FD6A153DC9EE2E88A74D9538 /* UAChannelRegistrar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAChannelRegistrar.h; path = Airship/Push/UAChannelRegistrar.h; sourceTree = "<group>"; };
+		67F9392B41F4E194335E4F47905770A4 /* UAPush.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAPush.h; path = Airship/Push/UAPush.h; sourceTree = "<group>"; };
+		6EAB4352E7742687FC30E08B992271CD /* UAInAppMessageControllerDefaultDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAInAppMessageControllerDefaultDelegate.h; path = Airship/Common/UAInAppMessageControllerDefaultDelegate.h; sourceTree = "<group>"; };
+		6FDAE4D26A1D8D0A73AE544E986BB32B /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
+		71068F354FC5FFC4F25776AB41EFA33A /* UAMessageCenterLocalization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAMessageCenterLocalization.h; path = Airship/Common/UAMessageCenterLocalization.h; sourceTree = "<group>"; };
+		72BEED32DCB325121AFDC0388D6F6B00 /* UAInbox.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAInbox.h; path = Airship/Inbox/UAInbox.h; sourceTree = "<group>"; };
+		72CF2D83E332D62B4748D9F9C92B5EE5 /* UADefaultMessageCenterListViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UADefaultMessageCenterListViewController.h; path = Airship/Common/UADefaultMessageCenterListViewController.h; sourceTree = "<group>"; };
+		79C9C1CDA16EFDC5C7EDEA647634F7EA /* UAJavaScriptDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAJavaScriptDelegate.h; path = Airship/Common/UAJavaScriptDelegate.h; sourceTree = "<group>"; };
+		7B933A317875F757584CEF27B7D272AC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		7C01FC443179253D629F79CF67C57618 /* UAAction+Operators.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UAAction+Operators.h"; path = "Airship/Common/UAAction+Operators.h"; sourceTree = "<group>"; };
+		7C26379F674AF8DAADCF8242A5A74F8D /* UAOverlayInboxMessageAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAOverlayInboxMessageAction.h; path = Airship/Common/UAOverlayInboxMessageAction.h; sourceTree = "<group>"; };
+		7CBE7146064DE32CE4E392FEBF1B86B9 /* UANotificationCategories.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UANotificationCategories.h; path = Airship/Push/UANotificationCategories.h; sourceTree = "<group>"; };
+		7CEAED3AD31BC92C2D82EF7EF1025C19 /* Pods-Berry SOAR-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Berry SOAR-frameworks.sh"; sourceTree = "<group>"; };
+		8191B6C735BA91E7CE613E397F3D348F /* UARichContentWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UARichContentWindow.h; path = Airship/Common/UARichContentWindow.h; sourceTree = "<group>"; };
+		86825484D62F6E7BB17B7D4883CE2979 /* UAConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAConfig.h; path = Airship/Common/UAConfig.h; sourceTree = "<group>"; };
+		8842F5B96D0B91115BC2FF60A586E2A9 /* UABespokeCloseView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UABespokeCloseView.h; path = Airship/Common/UABespokeCloseView.h; sourceTree = "<group>"; };
+		89257A69A4FD47896C27C80232DB4114 /* Pods-Berry SOAR-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Berry SOAR-resources.sh"; sourceTree = "<group>"; };
+		8B81B10A9651651B40A7BFBB7FDD7D99 /* UAJSONValueMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAJSONValueMatcher.h; path = Airship/Common/UAJSONValueMatcher.h; sourceTree = "<group>"; };
+		8D0CB4AA07D963C6D1F7B5D94780BD03 /* NSString+UALocalizationAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+UALocalizationAdditions.h"; path = "Airship/Common/NSString+UALocalizationAdditions.h"; sourceTree = "<group>"; };
+		8D72C453A196D0C42DEE0CCC25F2B27D /* UIWebView+UAAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+UAAdditions.h"; path = "Airship/Common/UIWebView+UAAdditions.h"; sourceTree = "<group>"; };
+		8F2E8B9C7B622B2A8F9620F36CBFC7A0 /* UANotificationCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UANotificationCategory.h; path = Airship/Push/UANotificationCategory.h; sourceTree = "<group>"; };
+		9087EAF6212C4BD586DFF3CCA94BD354 /* UAAddCustomEventAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAAddCustomEventAction.h; path = Airship/Common/UAAddCustomEventAction.h; sourceTree = "<group>"; };
+		9173FAE68CEFF43480BF119B89F445BB /* UAActionResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAActionResult.h; path = Airship/Common/UAActionResult.h; sourceTree = "<group>"; };
+		92E8315C0B2EE44D610CE6DB6D824BAD /* NSJSONSerialization+UAAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSJSONSerialization+UAAdditions.h"; path = "Airship/Common/NSJSONSerialization+UAAdditions.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		953D5720DE449BD27F5149B8C6D06346 /* UAInAppMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAInAppMessage.h; path = Airship/Common/UAInAppMessage.h; sourceTree = "<group>"; };
+		9757C67468F1400EC31BAA88CB1E2C39 /* UAAnalytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAAnalytics.h; path = Airship/Common/UAAnalytics.h; sourceTree = "<group>"; };
+		97F51DF0247791BFC9CC3672C874E0C8 /* libPods-Berry SOAR.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Berry SOAR.a"; path = "libPods-Berry SOAR.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		97FB9220BF873079B045127ECBE0F0CC /* UARegionEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UARegionEvent.h; path = Airship/Common/UARegionEvent.h; sourceTree = "<group>"; };
+		97FE9196F47E2DC9959363B7BCAE173F /* UAOpenExternalURLAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAOpenExternalURLAction.h; path = Airship/Common/UAOpenExternalURLAction.h; sourceTree = "<group>"; };
+		99914D2B4648267A422678E71685EDC0 /* UAChannelCapture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAChannelCapture.h; path = Airship/Common/UAChannelCapture.h; sourceTree = "<group>"; };
+		9A9620582738C1109F90B133C08385C3 /* UrbanAirship-iOS-SDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UrbanAirship-iOS-SDK-dummy.m"; sourceTree = "<group>"; };
+		9F27D1AA571566199EB161058B62EE73 /* UAApplicationMetrics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAApplicationMetrics.h; path = Airship/Common/UAApplicationMetrics.h; sourceTree = "<group>"; };
+		A3592112F583B05628619F023B3C35C9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		A3BDA22C44DAD472884D440ECDE472FA /* UAProximityRegion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAProximityRegion.h; path = Airship/Common/UAProximityRegion.h; sourceTree = "<group>"; };
+		A77DE87BD4FB2D756AAF87174BA9F1FF /* UA_Base64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UA_Base64.h; path = Airship/External/UA_Base64.h; sourceTree = "<group>"; };
+		AA2D772EAC39663F4DDF3226A38BE99B /* UAInAppMessaging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAInAppMessaging.h; path = Airship/Common/UAInAppMessaging.h; sourceTree = "<group>"; };
+		ABB847463C796524D7ABA8EE47DAE250 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		AE6A26AC41D3DB3A94862F859DD66A84 /* libUAirship-8.0.5.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libUAirship-8.0.5.a"; path = "Airship/libUAirship-8.0.5.a"; sourceTree = "<group>"; };
+		AF69D40E45E004E9E71823A77DD3C8C9 /* UANamedUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UANamedUser.h; path = Airship/Push/UANamedUser.h; sourceTree = "<group>"; };
+		B3A8205532F07A239DB63EFE27B404B9 /* UAGlobal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAGlobal.h; path = Airship/Common/UAGlobal.h; sourceTree = "<group>"; };
+		B47BA270839CBC2EB8CEDF6A842DE3EF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		B4F29EC1A2D7CA60FA22F038E9DA1D09 /* NSString+UAURLEncoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+UAURLEncoding.h"; path = "Airship/Common/NSString+UAURLEncoding.h"; sourceTree = "<group>"; };
+		B591EF6C1098AAB25B4863FF342CD395 /* Pods-Berry SOAR-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Berry SOAR-acknowledgements.plist"; sourceTree = "<group>"; };
+		B662326C6CBF2D74B762A8062806CE0A /* UANotificationResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UANotificationResponse.h; path = Airship/Push/UANotificationResponse.h; sourceTree = "<group>"; };
+		B81476FD65BE5DD6B6314F72353FA5F9 /* Pods-Berry SOAR-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Berry SOAR-dummy.m"; sourceTree = "<group>"; };
+		BE9BDC3B04A7B78AF6AC7B278533B7B7 /* UADefaultMessageCenterMessageViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UADefaultMessageCenterMessageViewController.h; path = Airship/Common/UADefaultMessageCenterMessageViewController.h; sourceTree = "<group>"; };
+		C097FBB56491BA7702C4E1E068E9B47E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
+		C2F3DB8A82D01A263CF5457F25828280 /* UARetailEventTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UARetailEventTemplate.h; path = Airship/Common/UARetailEventTemplate.h; sourceTree = "<group>"; };
+		C4D3B7317C6EBD188070BB5F4440FD1F /* UAJSONPredicate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAJSONPredicate.h; path = Airship/Common/UAJSONPredicate.h; sourceTree = "<group>"; };
+		C546B5AF52AD4D39E594D9D8F754C71B /* UADefaultMessageCenterSplitViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UADefaultMessageCenterSplitViewController.h; path = Airship/Common/UADefaultMessageCenterSplitViewController.h; sourceTree = "<group>"; };
+		CC2DA7ACAC821DD24FCE338902529F64 /* UAActionSchedule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAActionSchedule.h; path = Airship/Common/UAActionSchedule.h; sourceTree = "<group>"; };
+		CFC4F13B34C011AC177B6988C5C6BF69 /* UAActionArguments.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAActionArguments.h; path = Airship/Common/UAActionArguments.h; sourceTree = "<group>"; };
+		D1B9166C37818677348DDCBD54BEC693 /* Pods-Berry SOAR-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Berry SOAR-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D3E2B9446EFD85C06B00E7500EBBCF04 /* UAInboxMessageList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAInboxMessageList.h; path = Airship/Inbox/UAInboxMessageList.h; sourceTree = "<group>"; };
+		D4708AAFFB2BFB5B4850541BB18E10B3 /* UAURLProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAURLProtocol.h; path = Airship/Common/UAURLProtocol.h; sourceTree = "<group>"; };
+		D57ABD9AFC83EB99E10021EF71306298 /* UAJSONMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAJSONMatcher.h; path = Airship/Common/UAJSONMatcher.h; sourceTree = "<group>"; };
+		D8FE04484043498F4E9E658FB15ECC4B /* UAUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAUtils.h; path = Airship/Common/UAUtils.h; sourceTree = "<group>"; };
+		D90691EBCCBDED41C09F4DB655C5116D /* UADisplayInboxAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UADisplayInboxAction.h; path = Airship/Common/UADisplayInboxAction.h; sourceTree = "<group>"; };
+		DA30C1371049BF4B302267870A497BC8 /* UANotificationAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UANotificationAction.h; path = Airship/Push/UANotificationAction.h; sourceTree = "<group>"; };
+		DCAFD52B2972C84559BB8594EA95D630 /* UALandingPageAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UALandingPageAction.h; path = Airship/Common/LandingPages/UALandingPageAction.h; sourceTree = "<group>"; };
+		DEBCDCE34C8D63D595843E030849EBE0 /* UADummySource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UADummySource.m; sourceTree = "<group>"; };
+		E187CD24EA8CC38CECF659700A381FDB /* UAMediaEventTemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAMediaEventTemplate.h; path = Airship/Common/UAMediaEventTemplate.h; sourceTree = "<group>"; };
+		E207283B67614FE8C102BC3512243C9D /* UrbanAirship-iOS-SDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UrbanAirship-iOS-SDK-prefix.pch"; sourceTree = "<group>"; };
+		E31750CEA3D9B497C4BDD5590CBC2E5D /* UAInstallAttributionEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAInstallAttributionEvent.h; path = Airship/Common/UAInstallAttributionEvent.h; sourceTree = "<group>"; };
+		E67CC45F26DDE80EF4804D4AA5678CCB /* UATagUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UATagUtils.h; path = Airship/Common/UATagUtils.h; sourceTree = "<group>"; };
+		E8F0913992165E771CEC67FCE6A1AEB3 /* UAInAppMessageControllerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAInAppMessageControllerDelegate.h; path = Airship/Common/UAInAppMessageControllerDelegate.h; sourceTree = "<group>"; };
+		EDC7956EC75BA53D7459A50D2C0CB10E /* UAWhitelist.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAWhitelist.h; path = Airship/Common/UAWhitelist.h; sourceTree = "<group>"; };
+		EEF4835996A7D19048A9A5C2E1D2CA87 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		EFBEEDF5317B296BD909D7FB308DDFB5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		F00BFEB565FB318849F815AF16D6BAB8 /* UAAggregateActionResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAAggregateActionResult.h; path = Airship/Common/UAAggregateActionResult.h; sourceTree = "<group>"; };
+		F0AC8BD7A4EAC4415A51DDFEC856468C /* UADefaultMessageCenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UADefaultMessageCenter.h; path = Airship/Common/UADefaultMessageCenter.h; sourceTree = "<group>"; };
+		F4246321A10EF01D42E7CF257A55C5A7 /* UAActionRegistryEntry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAActionRegistryEntry.h; path = Airship/Common/UAActionRegistryEntry.h; sourceTree = "<group>"; };
+		F740D3DC271A142358810E881E7E0E24 /* UAAutomation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAAutomation.h; path = Airship/Common/UAAutomation.h; sourceTree = "<group>"; };
+		F758A1C69C6C49093A3A0B0DF3A5ED9F /* UAShareAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAShareAction.h; path = Airship/Common/UAShareAction.h; sourceTree = "<group>"; };
+		F964729950568ED59DA2A9E24FB87D8E /* UAirship.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAirship.h; path = Airship/Common/UAirship.h; sourceTree = "<group>"; };
+		F96C15A197FFB1CBFDEE63A8A6D593F8 /* UAAppIntegration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAAppIntegration.h; path = Airship/Common/UAAppIntegration.h; sourceTree = "<group>"; };
+		FAC3765A14CD42DB75C63A09DB83AFF5 /* UAIncomingInAppMessageAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAIncomingInAppMessageAction.h; path = Airship/Common/UAIncomingInAppMessageAction.h; sourceTree = "<group>"; };
+		FB369A01EAF1F207D290620E20E1CBAC /* libUrbanAirship-iOS-SDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libUrbanAirship-iOS-SDK.a"; path = "libUrbanAirship-iOS-SDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD852563A62D94A05828F8BB907C5BE4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		FEF0FF6CB3178EDC3368C5BE2D108BD1 /* UAAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UAAction.h; path = Airship/Common/UAAction.h; sourceTree = "<group>"; };
+		FF491429E0EACD64227C4D379B0D4C2A /* UALocationEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UALocationEvent.h; path = Airship/Common/UALocationEvent.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		427D47CE7C55AAFE951BB1886EAF21DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB33A8230DDDC505ADCFD070483945C6 /* CFNetwork.framework in Frameworks */,
+				583F27C8AF3F26A38870FD3187D499F6 /* CoreData.framework in Frameworks */,
+				7626DBD5F878EC7E5141FD1D57439D91 /* CoreGraphics.framework in Frameworks */,
+				C2A08675C61B869B78948E8AE1B3F7A0 /* CoreLocation.framework in Frameworks */,
+				8F906B497AE56C60C6AC2690D2C01CCA /* CoreTelephony.framework in Frameworks */,
+				36C76CFD082C4BD445722D493DF1C75F /* Foundation.framework in Frameworks */,
+				D23426F538772E8A1FCB06712ADF5EC6 /* MobileCoreServices.framework in Frameworks */,
+				FE5AA56659076217A9D2B58F6D166CC0 /* Security.framework in Frameworks */,
+				B0C64C77E31D83BC6AB6DFB8D1F6F416 /* SystemConfiguration.framework in Frameworks */,
+				45E1F0AFA4718E4341ABC1691B6A866F /* UIKit.framework in Frameworks */,
+				02AB43C48A3202D3EA06411D64372511 /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7408C3CF8A782B23B44BB9777F6842D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53EE1F067D130E5AF5F1AA3929337B99 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08D4DE56B0C9620CFC94D50638A2196B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97F51DF0247791BFC9CC3672C874E0C8 /* libPods-Berry SOAR.a */,
+				FB369A01EAF1F207D290620E20E1CBAC /* libUrbanAirship-iOS-SDK.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		090EFE2E0F54436E11F2024317FCFC25 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5C431CB12DEDDB766FB20595F436108C /* Pods-Berry SOAR */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3D4D8AA287EBD0558FBF433873833338 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4ABB5B38E32E33DF5694238DF34C45D2 /* UrbanAirship-iOS-SDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4157F71DC642AF100E26D679EEB3D906 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				08129AC6915C11E9EF79AB49587E61D8 /* AirshipResources.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4ABB5B38E32E33DF5694238DF34C45D2 /* UrbanAirship-iOS-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				246F532BC41C8AB3506D20CD845DD7C1 /* AirshipLib.h */,
+				92E8315C0B2EE44D610CE6DB6D824BAD /* NSJSONSerialization+UAAdditions.h */,
+				8D0CB4AA07D963C6D1F7B5D94780BD03 /* NSString+UALocalizationAdditions.h */,
+				B4F29EC1A2D7CA60FA22F038E9DA1D09 /* NSString+UAURLEncoding.h */,
+				A77DE87BD4FB2D756AAF87174BA9F1FF /* UA_Base64.h */,
+				1EDF114B4BFAFF0F3552BF64BA44A329 /* UAAccountEventTemplate.h */,
+				FEF0FF6CB3178EDC3368C5BE2D108BD1 /* UAAction.h */,
+				7C01FC443179253D629F79CF67C57618 /* UAAction+Operators.h */,
+				CFC4F13B34C011AC177B6988C5C6BF69 /* UAActionArguments.h */,
+				029A55FD66995975F0CEB6FB0ACD24AB /* UAActionJSDelegate.h */,
+				1B6F46769CFC6B8D5A1E94BD27DE0747 /* UAActionRegistry.h */,
+				F4246321A10EF01D42E7CF257A55C5A7 /* UAActionRegistryEntry.h */,
+				9173FAE68CEFF43480BF119B89F445BB /* UAActionResult.h */,
+				03B6436C9B142CEC66D1E5CD6BEAC834 /* UAActionRunner.h */,
+				CC2DA7ACAC821DD24FCE338902529F64 /* UAActionSchedule.h */,
+				1A26B1ABEF8D0414A959B8338457B616 /* UAActionScheduleInfo.h */,
+				3AAF51C850B84CB7D6F9DFBB7FDD5931 /* UAActivityViewController.h */,
+				9087EAF6212C4BD586DFF3CCA94BD354 /* UAAddCustomEventAction.h */,
+				34E8CDC4CE87E3C3FD6A01E27851A2B4 /* UAAddTagsAction.h */,
+				F00BFEB565FB318849F815AF16D6BAB8 /* UAAggregateActionResult.h */,
+				9757C67468F1400EC31BAA88CB1E2C39 /* UAAnalytics.h */,
+				F96C15A197FFB1CBFDEE63A8A6D593F8 /* UAAppIntegration.h */,
+				9F27D1AA571566199EB161058B62EE73 /* UAApplicationMetrics.h */,
+				01CC250ECC472037BC1B83768B8BACFC /* UAAssociatedIdentifiers.h */,
+				F740D3DC271A142358810E881E7E0E24 /* UAAutomation.h */,
+				8842F5B96D0B91115BC2FF60A586E2A9 /* UABespokeCloseView.h */,
+				54409CBA502DCF319D2F686E156C5334 /* UABeveledLoadingIndicator.h */,
+				639428306BABA0118CDB55DC36AFD123 /* UACancelSchedulesAction.h */,
+				99914D2B4648267A422678E71685EDC0 /* UAChannelCapture.h */,
+				67AF5727FD6A153DC9EE2E88A74D9538 /* UAChannelRegistrar.h */,
+				4CCB17B66452CF668A6EC1D78F6502AD /* UACircularRegion.h */,
+				86825484D62F6E7BB17B7D4883CE2979 /* UAConfig.h */,
+				4CBDB5B8AFE5214EAD2DF762902EA562 /* UACustomEvent.h */,
+				F0AC8BD7A4EAC4415A51DDFEC856468C /* UADefaultMessageCenter.h */,
+				2A4DD4550F443F7E4A1C959F9EA17F4B /* UADefaultMessageCenterListCell.h */,
+				72CF2D83E332D62B4748D9F9C92B5EE5 /* UADefaultMessageCenterListViewController.h */,
+				BE9BDC3B04A7B78AF6AC7B278533B7B7 /* UADefaultMessageCenterMessageViewController.h */,
+				C546B5AF52AD4D39E594D9D8F754C71B /* UADefaultMessageCenterSplitViewController.h */,
+				60F0B79EE3FDF47D3D7421C39F86E5CF /* UADefaultMessageCenterStyle.h */,
+				D90691EBCCBDED41C09F4DB655C5116D /* UADisplayInboxAction.h */,
+				4FCE51F5BA1450B3D41862F5AFA46E65 /* UADisposable.h */,
+				DEBCDCE34C8D63D595843E030849EBE0 /* UADummySource.m */,
+				3DA81D659E19A971D5C7A89736B880BC /* UAEvent.h */,
+				B3A8205532F07A239DB63EFE27B404B9 /* UAGlobal.h */,
+				953D5720DE449BD27F5149B8C6D06346 /* UAInAppMessage.h */,
+				4CC80A4C107CB5E8396CB4ACF238722E /* UAInAppMessageButtonActionBinding.h */,
+				6EAB4352E7742687FC30E08B992271CD /* UAInAppMessageControllerDefaultDelegate.h */,
+				E8F0913992165E771CEC67FCE6A1AEB3 /* UAInAppMessageControllerDelegate.h */,
+				5987EB25AC90C045282C424FBBB7F7F9 /* UAInAppMessageView.h */,
+				AA2D772EAC39663F4DDF3226A38BE99B /* UAInAppMessaging.h */,
+				72BEED32DCB325121AFDC0388D6F6B00 /* UAInbox.h */,
+				316978841D529A9CAE677D2BDD543CA6 /* UAInboxMessage.h */,
+				D3E2B9446EFD85C06B00E7500EBBCF04 /* UAInboxMessageList.h */,
+				5C46C9277FFFB4CFCFB7EA2F04A38A4F /* UAInboxUtils.h */,
+				FAC3765A14CD42DB75C63A09DB83AFF5 /* UAIncomingInAppMessageAction.h */,
+				E31750CEA3D9B497C4BDD5590CBC2E5D /* UAInstallAttributionEvent.h */,
+				F964729950568ED59DA2A9E24FB87D8E /* UAirship.h */,
+				79C9C1CDA16EFDC5C7EDEA647634F7EA /* UAJavaScriptDelegate.h */,
+				D57ABD9AFC83EB99E10021EF71306298 /* UAJSONMatcher.h */,
+				C4D3B7317C6EBD188070BB5F4440FD1F /* UAJSONPredicate.h */,
+				8B81B10A9651651B40A7BFBB7FDD7D99 /* UAJSONValueMatcher.h */,
+				DCAFD52B2972C84559BB8594EA95D630 /* UALandingPageAction.h */,
+				111F6F770AEAFC02CE43C27D276CEDA2 /* UALandingPageOverlayController.h */,
+				63786737AAE18ABD746E5FFCDEDBB6D3 /* UALocation.h */,
+				FF491429E0EACD64227C4D379B0D4C2A /* UALocationEvent.h */,
+				E187CD24EA8CC38CECF659700A381FDB /* UAMediaEventTemplate.h */,
+				3624928D8E09851EA59C8507F9643596 /* UAMessageCenterDateUtils.h */,
+				71068F354FC5FFC4F25776AB41EFA33A /* UAMessageCenterLocalization.h */,
+				0868A6954A1F5EB07D30EDC8305B4FD0 /* UAModifyTagsAction.h */,
+				AF69D40E45E004E9E71823A77DD3C8C9 /* UANamedUser.h */,
+				31E76A69A2158126050F9CD80B4B1D23 /* UANativeBridge.h */,
+				DA30C1371049BF4B302267870A497BC8 /* UANotificationAction.h */,
+				7CBE7146064DE32CE4E392FEBF1B86B9 /* UANotificationCategories.h */,
+				8F2E8B9C7B622B2A8F9620F36CBFC7A0 /* UANotificationCategory.h */,
+				16A575ECC53EAAFF5A405D276758E4D9 /* UANotificationContent.h */,
+				B662326C6CBF2D74B762A8062806CE0A /* UANotificationResponse.h */,
+				97FE9196F47E2DC9959363B7BCAE173F /* UAOpenExternalURLAction.h */,
+				7C26379F674AF8DAADCF8242A5A74F8D /* UAOverlayInboxMessageAction.h */,
+				423B5CC0AD451BB0D77D275F688A7E1B /* UAPasteboardAction.h */,
+				A3BDA22C44DAD472884D440ECDE472FA /* UAProximityRegion.h */,
+				67F9392B41F4E194335E4F47905770A4 /* UAPush.h */,
+				97FB9220BF873079B045127ECBE0F0CC /* UARegionEvent.h */,
+				569DA43E06CD3298F60CA7D576D0D642 /* UARemoveTagsAction.h */,
+				C2F3DB8A82D01A263CF5457F25828280 /* UARetailEventTemplate.h */,
+				8191B6C735BA91E7CE613E397F3D348F /* UARichContentWindow.h */,
+				3B6A005EDFA058108FBE589B4B29E1CD /* UAScheduleAction.h */,
+				37B49A494B5FDF6EB4404497ED89BF8E /* UAScheduleTrigger.h */,
+				F758A1C69C6C49093A3A0B0DF3A5ED9F /* UAShareAction.h */,
+				E67CC45F26DDE80EF4804D4AA5678CCB /* UATagUtils.h */,
+				D4708AAFFB2BFB5B4850541BB18E10B3 /* UAURLProtocol.h */,
+				63806B44BEE128A5BAA2E07EB4D97943 /* UAUser.h */,
+				386A8B5CFFB6D50930D410A9C37917BE /* UAUserAPIClient.h */,
+				D8FE04484043498F4E9E658FB15ECC4B /* UAUtils.h */,
+				23741DD40932167C230F17DE3893CD6B /* UAWebViewCallData.h */,
+				1F8B0BDB04B300135F87D10C42DD6A2E /* UAWebViewDelegate.h */,
+				EDC7956EC75BA53D7459A50D2C0CB10E /* UAWhitelist.h */,
+				8D72C453A196D0C42DEE0CCC25F2B27D /* UIWebView+UAAdditions.h */,
+				EFA3BD5CF8BB30ABC28407F30411D40C /* Frameworks */,
+				4157F71DC642AF100E26D679EEB3D906 /* Resources */,
+				88C5E6E2D2BC0A301F7C09089CB52804 /* Support Files */,
+			);
+			name = "UrbanAirship-iOS-SDK";
+			path = "UrbanAirship-iOS-SDK";
+			sourceTree = "<group>";
+		};
+		5C431CB12DEDDB766FB20595F436108C /* Pods-Berry SOAR */ = {
+			isa = PBXGroup;
+			children = (
+				D1B9166C37818677348DDCBD54BEC693 /* Pods-Berry SOAR-acknowledgements.markdown */,
+				B591EF6C1098AAB25B4863FF342CD395 /* Pods-Berry SOAR-acknowledgements.plist */,
+				B81476FD65BE5DD6B6314F72353FA5F9 /* Pods-Berry SOAR-dummy.m */,
+				7CEAED3AD31BC92C2D82EF7EF1025C19 /* Pods-Berry SOAR-frameworks.sh */,
+				89257A69A4FD47896C27C80232DB4114 /* Pods-Berry SOAR-resources.sh */,
+				1153D3DB5EB38E98D694FAB48D05D909 /* Pods-Berry SOAR.debug.xcconfig */,
+				0972DCF0709E5BCD57FD7E44A913FF65 /* Pods-Berry SOAR.release.xcconfig */,
+			);
+			name = "Pods-Berry SOAR";
+			path = "Target Support Files/Pods-Berry SOAR";
+			sourceTree = "<group>";
+		};
+		79CE9FEEFB093D1B7580992560A05669 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B47BA270839CBC2EB8CEDF6A842DE3EF /* CFNetwork.framework */,
+				C097FBB56491BA7702C4E1E068E9B47E /* CoreData.framework */,
+				7B933A317875F757584CEF27B7D272AC /* CoreGraphics.framework */,
+				EFBEEDF5317B296BD909D7FB308DDFB5 /* CoreLocation.framework */,
+				6FDAE4D26A1D8D0A73AE544E986BB32B /* CoreTelephony.framework */,
+				FD852563A62D94A05828F8BB907C5BE4 /* Foundation.framework */,
+				EEF4835996A7D19048A9A5C2E1D2CA87 /* MobileCoreServices.framework */,
+				A3592112F583B05628619F023B3C35C9 /* Security.framework */,
+				ABB847463C796524D7ABA8EE47DAE250 /* SystemConfiguration.framework */,
+				2F176ADCA036E051D3965BFD1BC386AC /* UIKit.framework */,
+				2DF78719F7C93A9D2F66B919C5C88522 /* UserNotifications.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				EB57DDB3388FBC701046A1E93218737F /* Frameworks */,
+				3D4D8AA287EBD0558FBF433873833338 /* Pods */,
+				08D4DE56B0C9620CFC94D50638A2196B /* Products */,
+				090EFE2E0F54436E11F2024317FCFC25 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		88C5E6E2D2BC0A301F7C09089CB52804 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0E79D5FA33C1006AA2CA0443EA9E66A0 /* UrbanAirship-iOS-SDK.xcconfig */,
+				9A9620582738C1109F90B133C08385C3 /* UrbanAirship-iOS-SDK-dummy.m */,
+				E207283B67614FE8C102BC3512243C9D /* UrbanAirship-iOS-SDK-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UrbanAirship-iOS-SDK";
+			sourceTree = "<group>";
+		};
+		EB57DDB3388FBC701046A1E93218737F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79CE9FEEFB093D1B7580992560A05669 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EFA3BD5CF8BB30ABC28407F30411D40C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE6A26AC41D3DB3A94862F859DD66A84 /* libUAirship-8.0.5.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		24065065DC1E948D7DBA5DDC9EB8F520 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				948EF0E94E84F36AD8318E126561BACB /* AirshipLib.h in Headers */,
+				36773BE880E3BB6D213404E625016C1F /* NSJSONSerialization+UAAdditions.h in Headers */,
+				22B3A3BB4C06E817D666FF4DBFE6660B /* NSString+UALocalizationAdditions.h in Headers */,
+				42248250991EB0CA2E05D45C6B687A61 /* NSString+UAURLEncoding.h in Headers */,
+				0A4C627169D67556B56B169D9305C3DB /* UA_Base64.h in Headers */,
+				BD56866701DBA24B1E40D0ADDED1CA2D /* UAAccountEventTemplate.h in Headers */,
+				83F5C4199D89719C028F688EF470CEBE /* UAAction+Operators.h in Headers */,
+				462611546B7389855A1022127364BD2F /* UAAction.h in Headers */,
+				461AEDCF4245F2C7568C943180FFDF70 /* UAActionArguments.h in Headers */,
+				A62C187F797520FA3082256CEC2E6E0E /* UAActionJSDelegate.h in Headers */,
+				DA0563C42B794A2FF36C66CC3BBA781B /* UAActionRegistry.h in Headers */,
+				750CBB2A816003750BD86A35AAB834CB /* UAActionRegistryEntry.h in Headers */,
+				38A50F1BF814395ACA67E5DB11D0FD2A /* UAActionResult.h in Headers */,
+				61FA336CFDF61C593870F11A6C8C9C44 /* UAActionRunner.h in Headers */,
+				7B745D47C36FC9BFD015B4EAF0AECAA4 /* UAActionSchedule.h in Headers */,
+				6A32C5A6A2F23B341F242E757E424CC6 /* UAActionScheduleInfo.h in Headers */,
+				05B20DC24B315D0129EB96B52B8B9FB0 /* UAActivityViewController.h in Headers */,
+				5FAB8C5E20C637AF8176F8A905FADF04 /* UAAddCustomEventAction.h in Headers */,
+				7940FC8971E850C9BC837E9C709B83CD /* UAAddTagsAction.h in Headers */,
+				A226A236E41CC90C2F5E523B262F1989 /* UAAggregateActionResult.h in Headers */,
+				D9BF783747DE8D014C4B2348B7AE02E7 /* UAAnalytics.h in Headers */,
+				836DFC83457519FFF38F1A6B7463CD48 /* UAAppIntegration.h in Headers */,
+				ED94273D279D9C80C146D98693674521 /* UAApplicationMetrics.h in Headers */,
+				F78E5C07EB3DB8B59A4753EFCE5816AD /* UAAssociatedIdentifiers.h in Headers */,
+				FDD74E655BFF0B3F840B52760E564B98 /* UAAutomation.h in Headers */,
+				7918620CB8BAD277A7D611E2B9933F49 /* UABespokeCloseView.h in Headers */,
+				282391B4ABC20CD83403777F03E32363 /* UABeveledLoadingIndicator.h in Headers */,
+				6540F641A711C79E8FA2D18E6250CE85 /* UACancelSchedulesAction.h in Headers */,
+				75A0ED154FD6C5DCB1E0ADEC2498C6D2 /* UAChannelCapture.h in Headers */,
+				59CA23FA33DABF1369773D6B7C20D1F0 /* UAChannelRegistrar.h in Headers */,
+				6CFE2656F950941F4CD3BA8C17567DFE /* UACircularRegion.h in Headers */,
+				89426E3E0C33073D94809B8F8F1C53E6 /* UAConfig.h in Headers */,
+				9A1249BE0936934B10C299DCC97AFD2A /* UACustomEvent.h in Headers */,
+				86F5764759F6E07574A8F791240DCA96 /* UADefaultMessageCenter.h in Headers */,
+				1F5F2B5ED564C2394310E7F81AF04306 /* UADefaultMessageCenterListCell.h in Headers */,
+				6F683131DF86F1F3749ED06C600E451E /* UADefaultMessageCenterListViewController.h in Headers */,
+				0533AABC72B4FE63F773B753D33678CA /* UADefaultMessageCenterMessageViewController.h in Headers */,
+				0045EAAEDC844992CB8D0F0137E910BC /* UADefaultMessageCenterSplitViewController.h in Headers */,
+				AC9DC319552B2187CC0E0122CEDABC73 /* UADefaultMessageCenterStyle.h in Headers */,
+				95784D3112D5EAFAF04A0AE3C5ADF9B1 /* UADisplayInboxAction.h in Headers */,
+				527335E8DC647286D9D4FD34DD329BAA /* UADisposable.h in Headers */,
+				C252EA26D32A31F8B8B9F3D0FCCB4774 /* UAEvent.h in Headers */,
+				281F60CD370F3A2516ED257EB663C9B3 /* UAGlobal.h in Headers */,
+				45CD5B57FD2BAC904F4E0CF1360D8EB8 /* UAInAppMessage.h in Headers */,
+				2D25FADA8F59B949EF0DC96BB3BE926F /* UAInAppMessageButtonActionBinding.h in Headers */,
+				450CC08AD490EE88FEBE8FF5E20BA0AB /* UAInAppMessageControllerDefaultDelegate.h in Headers */,
+				BCB308E685C3C91793E8F6F19BAE9769 /* UAInAppMessageControllerDelegate.h in Headers */,
+				FC75AA39AC7ACB35AAC220AD6F253068 /* UAInAppMessageView.h in Headers */,
+				9E982E9E7D7BFA879DF5AC7CED2E1B7F /* UAInAppMessaging.h in Headers */,
+				D3AAED11713DD9ED9F4A0BCBBFE47F36 /* UAInbox.h in Headers */,
+				DDD6A0298FB036DF9B1ECA48AFF11449 /* UAInboxMessage.h in Headers */,
+				3F7347F06082E7212F3AB4B4BB6FBF0A /* UAInboxMessageList.h in Headers */,
+				27164B213D7C59260C1BEA38B4C7066E /* UAInboxUtils.h in Headers */,
+				C3606BA572368A6C56B6FE9C05AFB06F /* UAIncomingInAppMessageAction.h in Headers */,
+				9036D6FC8A0A79487C30670122D89A0D /* UAInstallAttributionEvent.h in Headers */,
+				54701DA4F5EBFABE1B4504728D833BBF /* UAirship.h in Headers */,
+				8A1DBEBED6B02DB8FCED91F3308BFF6C /* UAJavaScriptDelegate.h in Headers */,
+				AD6BFEC7DA1FEAC0E23C57F6FA6F7F18 /* UAJSONMatcher.h in Headers */,
+				B01BD6B34A3C6B8CC49B5DAABFFC836A /* UAJSONPredicate.h in Headers */,
+				6DD3D567A7E56F5B5C7964071DD78D62 /* UAJSONValueMatcher.h in Headers */,
+				496D6E2C99A0DF945F9FC808157DE6C1 /* UALandingPageAction.h in Headers */,
+				353FFF013D7D87DC749F004122583D13 /* UALandingPageOverlayController.h in Headers */,
+				F49CE81379CF71A1ABA6155D5232761B /* UALocation.h in Headers */,
+				3513B76C7745F2838E824F33CFF70D98 /* UALocationEvent.h in Headers */,
+				98B3B2EE50C0BE5DB4EED7ACFA22AD68 /* UAMediaEventTemplate.h in Headers */,
+				6B1C9E808735E024938B0B762C267419 /* UAMessageCenterDateUtils.h in Headers */,
+				28A2F9A1F4E89F69CBFC0DB320999F03 /* UAMessageCenterLocalization.h in Headers */,
+				C0B809324EEC223EBDE9B49B4C3F4115 /* UAModifyTagsAction.h in Headers */,
+				B874455A03979C875B2CFCA2522699B6 /* UANamedUser.h in Headers */,
+				E9A41AD2AF74FC95C249DE792E44E7C6 /* UANativeBridge.h in Headers */,
+				216D7763A5492B3C0F54B66010C27FB2 /* UANotificationAction.h in Headers */,
+				6ED5A313056716397601416DD33AED5C /* UANotificationCategories.h in Headers */,
+				B358453BDA718AF935740EA7A7B69069 /* UANotificationCategory.h in Headers */,
+				30ACBA9C9DC36B5FB1F244571CAF95D0 /* UANotificationContent.h in Headers */,
+				43D4873BF270026DA9EA4CDC9187457F /* UANotificationResponse.h in Headers */,
+				B3C07CBDFD369A6274E93E503ACBDE55 /* UAOpenExternalURLAction.h in Headers */,
+				34E25060DE5E8573FD7B843753B1934B /* UAOverlayInboxMessageAction.h in Headers */,
+				F8A4CDC5C7A2CE1F6F6162967B16DDB7 /* UAPasteboardAction.h in Headers */,
+				A8F98E28B4AD6BA744E0E07D644F3260 /* UAProximityRegion.h in Headers */,
+				B97D7FF930E7A7EA4E87E634F614F141 /* UAPush.h in Headers */,
+				AD166FE668409F308A123B549A249AAE /* UARegionEvent.h in Headers */,
+				C0AD3E65C28C96C5F62ED97CD44EAA59 /* UARemoveTagsAction.h in Headers */,
+				8F885E6070BE1598E6158F5FA32EA032 /* UARetailEventTemplate.h in Headers */,
+				8440BD55073E5D96DA7E9BA52445B310 /* UARichContentWindow.h in Headers */,
+				3BDC8ECFF900D06CE1FD3E4567C2FE4D /* UAScheduleAction.h in Headers */,
+				5500770BB0CBF3DB0709BBB9196DBE6F /* UAScheduleTrigger.h in Headers */,
+				4C80938B803C0C002CD842833B7D3D8A /* UAShareAction.h in Headers */,
+				8FCF78C6F15C368345062970A4AE0D19 /* UATagUtils.h in Headers */,
+				68F7A5B39CBB656914ED40D40D7E14FB /* UAURLProtocol.h in Headers */,
+				330968D5910F84143A8C571CC936C14E /* UAUser.h in Headers */,
+				B06F25274A79394BEFA130244B09B06E /* UAUserAPIClient.h in Headers */,
+				1CBA7154C94D481438F63E30989E0B6D /* UAUtils.h in Headers */,
+				55EE9CA7CFE0BE9292C02FE3C907606B /* UAWebViewCallData.h in Headers */,
+				0268F30C676AA6DF1CCCB94D1A881667 /* UAWebViewDelegate.h in Headers */,
+				F8122E1970461D1E27EE88FCD3236D24 /* UAWhitelist.h in Headers */,
+				EF18CC1E2B15ED3FB09C4E6567147632 /* UIWebView+UAAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7599BF0DC8F913249BFFA16383130D02 /* UrbanAirship-iOS-SDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB0C96FFEC153C9E810C756FC9433B91 /* Build configuration list for PBXNativeTarget "UrbanAirship-iOS-SDK" */;
+			buildPhases = (
+				B58AE208801892116CAF30A1F2A7072B /* Sources */,
+				427D47CE7C55AAFE951BB1886EAF21DC /* Frameworks */,
+				24065065DC1E948D7DBA5DDC9EB8F520 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UrbanAirship-iOS-SDK";
+			productName = "UrbanAirship-iOS-SDK";
+			productReference = FB369A01EAF1F207D290620E20E1CBAC /* libUrbanAirship-iOS-SDK.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9CC07DFC6DFEB6B2069F0BEB517C9CE4 /* Pods-Berry SOAR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A27FCE1F346F5B10A64753D47B64E943 /* Build configuration list for PBXNativeTarget "Pods-Berry SOAR" */;
+			buildPhases = (
+				4CD874B617EC99931632396CD8244456 /* Sources */,
+				7408C3CF8A782B23B44BB9777F6842D6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				118C942BF6E55087167A725813DDD4DD /* PBXTargetDependency */,
+			);
+			name = "Pods-Berry SOAR";
+			productName = "Pods-Berry SOAR";
+			productReference = 97F51DF0247791BFC9CC3672C874E0C8 /* libPods-Berry SOAR.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 08D4DE56B0C9620CFC94D50638A2196B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9CC07DFC6DFEB6B2069F0BEB517C9CE4 /* Pods-Berry SOAR */,
+				7599BF0DC8F913249BFFA16383130D02 /* UrbanAirship-iOS-SDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4CD874B617EC99931632396CD8244456 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCFBA78C788B594E7FCC1E456FE37F33 /* Pods-Berry SOAR-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B58AE208801892116CAF30A1F2A7072B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6C84B29578F004DD4D2ADDF009D59B8 /* UADummySource.m in Sources */,
+				6AE344E050820D28C325598CB123EAC1 /* UrbanAirship-iOS-SDK-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		118C942BF6E55087167A725813DDD4DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "UrbanAirship-iOS-SDK";
+			target = 7599BF0DC8F913249BFFA16383130D02 /* UrbanAirship-iOS-SDK */;
+			targetProxy = B3731E00535F088F06977395844D8AF2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		14F1678ADA440BE320805DE4B767CB0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0972DCF0709E5BCD57FD7E44A913FF65 /* Pods-Berry SOAR.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		224742B0E1D488A62EE9B09A1215FA41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E79D5FA33C1006AA2CA0443EA9E66A0 /* UrbanAirship-iOS-SDK.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UrbanAirship-iOS-SDK/UrbanAirship-iOS-SDK-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		34FE9531DA9AF2820790339988D5FF41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C104F7F091290C3D1E248192F07FE689 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		CC5E1E180F5059B43E7B5E9BCA48A098 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1153D3DB5EB38E98D694FAB48D05D909 /* Pods-Berry SOAR.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F9234638C9DB47C91F68485BF658A594 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E79D5FA33C1006AA2CA0443EA9E66A0 /* UrbanAirship-iOS-SDK.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UrbanAirship-iOS-SDK/UrbanAirship-iOS-SDK-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C104F7F091290C3D1E248192F07FE689 /* Debug */,
+				34FE9531DA9AF2820790339988D5FF41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A27FCE1F346F5B10A64753D47B64E943 /* Build configuration list for PBXNativeTarget "Pods-Berry SOAR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC5E1E180F5059B43E7B5E9BCA48A098 /* Debug */,
+				14F1678ADA440BE320805DE4B767CB0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB0C96FFEC153C9E810C756FC9433B91 /* Build configuration list for PBXNativeTarget "UrbanAirship-iOS-SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				224742B0E1D488A62EE9B09A1215FA41 /* Debug */,
+				F9234638C9DB47C91F68485BF658A594 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

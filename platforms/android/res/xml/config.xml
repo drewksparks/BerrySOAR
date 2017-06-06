@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.berry.soar" version="2.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="UAirship">
+        <param name="android-package" value="com.urbanairship.cordova.UAirshipPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="StatusBar">
+        <param name="android-package" value="org.apache.cordova.statusbar.StatusBar" />
+        <param name="onload" value="true" />
+    </feature>
+    <name>Berry SOAR</name>
+    <description>
+        Your orientation guide to Berry College
+    </description>
+    <author email="webmanager@berry.edu" href="http://www.berry.edu">
+        Berry College Digital Marketing
+    </author>
+    <content src="index.html" />
+    <allow-navigation href="http://www.berry.edu/*" />
+    <allow-navigation href="https://www.berry.edu/*" />
+    <allow-navigation href="*" />
+    <access origin="*" />
+    <access origin="http://berry.edu" subdomains="true" />
+    <access origin="https://berry.edu" subdomains="true" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="http://www.berry.edu/*" />
+    <allow-intent href="https://www.berry.edu/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <icon qualifier="xxxhdpi" src="www/res/icons/android/icon-192-xxxhdpi.png" />
+    <icon qualifier="xxhdpi" src="www/res/icons/android/icon-144-xxhdpi.png" />
+    <splash qualifier="ldpi" src="www/res/screens/android/screen-ldpi-portrait.png" />
+    <splash qualifier="mdpi" src="www/res/screens/android/screen-mdpi-portrait.png" />
+    <splash qualifier="hdpi" src="www/res/screens/android/screen-hdpi-portrait.png" />
+    <splash qualifier="xhdpi" src="www/res/screens/android/screen-xhdpi-portrait.png" />
+    <allow-intent href="market:*" />
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="orientation" value="portrait" />
+    <preference name="target-device" value="handset" />
+    <preference name="fullscreen" value="false" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="prerendered-icon" value="true" />
+    <preference name="stay-in-webview" value="false" />
+    <preference name="ios-statusbarstyle" value="black-opaque" />
+    <preference name="detect-data-types" value="true" />
+    <preference name="exit-on-suspend" value="false" />
+    <preference name="show-splash-screen-spinner" value="false" />
+    <preference name="auto-hide-splash-screen" value="true" />
+    <preference name="com.urbanairship.production_app_key" value="0KdzCNtvTJmHMUHMatLB5A" />
+    <preference name="com.urbanairship.production_app_secret" value="X7UWJmgKTfid6MpUzxlkjg" />
+    <preference name="com.urbanairship.development_app_key" value="WdzOtyWBSpaisDRtbesKsA" />
+    <preference name="com.urbanairship.development_app_secret" value="-jtzuQyaQd-KpgkcNYMx5g" />
+    <preference name="com.urbanairship.gcm_sender" value="909486533514" />
+    <preference name="com.urbanairship.in_production" value="true" />
+    <preference name="com.urbanairship.enable_push_onlaunch" value="true" />
+    <preference name="com.urbanairship.enable_analytics" value="true" />
+    <preference name="com.urbanairship.development_log_level" value="debug" />
+    <preference name="com.urbanairship.production_log_level" value="error" />
+    <preference name="com.urbanairship.notification_icon" value="ic_notification" />
+    <preference name="com.urbanairship.notification_sound" value="push" />
+    <preference name="com.urbanairship.notification_accent_color" value="#15397f" />
+    <preference name="com.urbanairship.clear_badge_onlaunch" value="true" />
+    <preference name="com.urbanairship.ios_foreground_notification_presentation_alert" value="true" />
+    <preference name="com.urbanairship.ios_foreground_notification_presentation_badge" value="true" />
+    <preference name="com.urbanairship.ios_foreground_notification_presentation_sound" value="true" />
+    <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="StatusBarBackgroundColor" value="#15397F" />
+    <preference name="StatusBarStyle" value="lightcontent" />
+</widget>

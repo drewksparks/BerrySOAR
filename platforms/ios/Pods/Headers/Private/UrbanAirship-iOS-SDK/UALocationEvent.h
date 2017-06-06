@@ -1,0 +1,5 @@
+XSym
+0062
+af55a13051e79fea83c2345a590713bf
+../../../UrbanAirship-iOS-SDK/Airship/Common/UALocationEvent.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 

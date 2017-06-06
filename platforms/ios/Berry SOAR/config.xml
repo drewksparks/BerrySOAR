@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.berry.soar" version="2.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="LocalStorage">
+        <param name="ios-package" value="CDVLocalStorage" />
+    </feature>
+    <feature name="HandleOpenUrl">
+        <param name="ios-package" value="CDVHandleOpenURL" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="IntentAndNavigationFilter">
+        <param name="ios-package" value="CDVIntentAndNavigationFilter" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="GestureHandler">
+        <param name="ios-package" value="CDVGestureHandler" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="UAirship">
+        <param name="ios-package" value="UAirshipPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="StatusBar">
+        <param name="ios-package" value="CDVStatusBar" />
+        <param name="onload" value="true" />
+    </feature>
+    <name>Berry SOAR</name>
+    <description>
+        Your orientation guide to Berry College
+    </description>
+    <author email="webmanager@berry.edu" href="http://www.berry.edu">
+        Berry College Digital Marketing
+    </author>
+    <content src="index.html" />
+    <allow-navigation href="http://www.berry.edu/*" />
+    <allow-navigation href="https://www.berry.edu/*" />
+    <allow-navigation href="*" />
+    <access origin="*" />
+    <access origin="http://berry.edu" subdomains="true" />
+    <access origin="https://berry.edu" subdomains="true" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="http://www.berry.edu/*" />
+    <allow-intent href="https://www.berry.edu/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <icon height="29" src="www/res/icons/ios/icon-small.png" width="29" />
+    <icon height="58" src="www/res/icons/ios/icon-small-2x.png" width="58" />
+    <icon height="40" src="www/res/icons/ios/icon-40.png" width="40" />
+    <icon height="80" src="www/res/icons/ios/icon-40-2x.png" width="80" />
+    <icon height="50" src="www/res/icons/ios/icon-50.png" width="50" />
+    <icon height="100" src="www/res/icons/ios/icon-50-2x.png" width="100" />
+    <icon height="57" src="www/res/icons/ios/icon.png" width="57" />
+    <icon height="114" src="www/res/icons/ios/icon-2x.png" width="114" />
+    <icon height="60" src="www/res/icons/ios/icon-60.png" width="60" />
+    <icon height="120" src="www/res/icons/ios/icon-60-2x.png" width="120" />
+    <icon height="180" src="www/res/icons/ios/icon-60-3x.png" width="180" />
+    <icon height="72" src="www/res/icons/ios/icon-72.png" width="72" />
+    <icon height="144" src="www/res/icons/ios/icon-72-2x.png" width="144" />
+    <icon height="76" src="www/res/icons/ios/icon-76.png" width="76" />
+    <icon height="152" src="www/res/icons/ios/icon-76-2x.png" width="152" />
+    <splash height="480" src="www/res/screens/ios/screen-iphone-portrait.png" width="320" />
+    <splash height="960" src="www/res/screens/ios/screen-iphone-portrait-2x.png" width="640" />
+    <splash height="1136" src="www/res/screens/ios/screen-iphone-portrait-568h-2x.png" width="640" />
+    <splash height="1334" src="www/res/screens/ios/screen-iphone-portrait-667h.png" width="750" />
+    <splash height="2208" src="www/res/screens/ios/screen-iphone-portrait-736h.png" width="1242" />
+    <allow-intent href="itms:*" />
+    <allow-intent href="itms-apps:*" />
+    <allow-intent href="instagram:*" />
+    <preference name="AllowInlineMediaPlayback" value="false" />
+    <preference name="BackupWebStorage" value="cloud" />
+    <preference name="DisallowOverscroll" value="false" />
+    <preference name="EnableViewportScale" value="false" />
+    <preference name="KeyboardDisplayRequiresUserAction" value="true" />
+    <preference name="MediaPlaybackRequiresUserAction" value="false" />
+    <preference name="SuppressesIncrementalRendering" value="false" />
+    <preference name="SuppressesLongPressGesture" value="false" />
+    <preference name="Suppresses3DTouchGesture" value="false" />
+    <preference name="GapBetweenPages" value="0" />
+    <preference name="PageLength" value="0" />
+    <preference name="PaginationBreakingMode" value="page" />
+    <preference name="PaginationMode" value="unpaginated" />
+    <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="orientation" value="portrait" />
+    <preference name="target-device" value="handset" />
+    <preference name="fullscreen" value="false" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="prerendered-icon" value="true" />
+    <preference name="stay-in-webview" value="false" />
+    <preference name="ios-statusbarstyle" value="black-opaque" />
+    <preference name="detect-data-types" value="true" />
+    <preference name="exit-on-suspend" value="false" />
+    <preference name="show-splash-screen-spinner" value="false" />
+    <preference name="auto-hide-splash-screen" value="true" />
+    <preference name="com.urbanairship.production_app_key" value="0KdzCNtvTJmHMUHMatLB5A" />
+    <preference name="com.urbanairship.production_app_secret" value="X7UWJmgKTfid6MpUzxlkjg" />
+    <preference name="com.urbanairship.development_app_key" value="WdzOtyWBSpaisDRtbesKsA" />
+    <preference name="com.urbanairship.development_app_secret" value="-jtzuQyaQd-KpgkcNYMx5g" />
+    <preference name="com.urbanairship.gcm_sender" value="909486533514" />
+    <preference name="com.urbanairship.in_production" value="true" />
+    <preference name="com.urbanairship.enable_push_onlaunch" value="true" />
+    <preference name="com.urbanairship.enable_analytics" value="true" />
+    <preference name="com.urbanairship.development_log_level" value="debug" />
+    <preference name="com.urbanairship.production_log_level" value="error" />
+    <preference name="com.urbanairship.notification_icon" value="ic_notification" />
+    <preference name="com.urbanairship.notification_sound" value="push" />
+    <preference name="com.urbanairship.notification_accent_color" value="#15397f" />
+    <preference name="com.urbanairship.clear_badge_onlaunch" value="true" />
+    <preference name="com.urbanairship.ios_foreground_notification_presentation_alert" value="true" />
+    <preference name="com.urbanairship.ios_foreground_notification_presentation_badge" value="true" />
+    <preference name="com.urbanairship.ios_foreground_notification_presentation_sound" value="true" />
+    <preference name="StatusBarBackgroundColor" value="#15397F" />
+    <preference name="StatusBarStyle" value="lightcontent" />
+</widget>

@@ -1,0 +1,5 @@
+XSym
+0068
+a64ab9cb4ab5652e656a20f7d247bfcb
+../../../UrbanAirship-iOS-SDK/Airship/Common/UARetailEventTemplate.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
